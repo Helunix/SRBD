@@ -747,7 +747,7 @@ html.theme-light .container-YkUktl {
   left: 0;
   height: 100%;
   width: 2px;
-  background: rgb(blue);
+  background: rgb(var(--accent));
   box-shadow: 0 0 calc(var(--channel-glow-intensity) * 15px) calc(var(--channel-glow-intensity) * 5px) rgb(var(--accent), 0.2);
 }
 #app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ .icon-2W8DHg,
