@@ -1034,6 +1034,18 @@
   padding: 0;
   background-color: #191f2e;
 }
+
+#app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: rgb(var(--accent));
+  box-shadow: 0 0 calc(var(--channel-glow-intensity) * 15px) calc(var(--channel-glow-intensity) * 5px) rgb(var(--accent), 0.2);
+}
+
+
 :root .container-2kTWmC .container-2oNtJn {
   border-radius: 5px 5px 0 0;
 }
