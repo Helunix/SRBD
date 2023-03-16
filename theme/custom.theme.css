@@ -6,11 +6,11 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import url('https://helunix.github.io/SRBD/softX.css');
-@import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
-@import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
-@import url('https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css');
-/*@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');*/
+/*@import url('https://discordstyles.github.io/SoftX/SoftX.css');*/
+@import url('https://helunix.github.io/SRBD/base/custom.css');
+@import url('https://helunix.github.io/SRBD//others/radial-glow.css');
+@import url('https://helunix.github.io/SRBD//others/vertical-user-areacss');
+@import url('https://helunix.github.io/SRBD//others/windows-titlebar.css');
 
 :root {
   --scrollbar-auto-thumb: #121722;
