@@ -11,10 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 /*@import url('https://discordstyles.github.io/SoftX/SoftX.css');*/
-@import url('https://helunix.github.io/SRBD/softX.css');
-@import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
-@import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url('https://helunix.github.io/SRBD/base/softX.css');
+@import url('https://helunix.github.io/SRBD//others/radial-glow.css');
+@import url('https://helunix.github.io/SRBD//others/vertical-user-areacss');
+@import url('https://helunix.github.io/SRBD//others/windows-titlebar.css');
 
 :root {
   --background-image: url('https://i.imgur.com/Nglfni6.png'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */

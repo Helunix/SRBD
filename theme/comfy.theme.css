@@ -13,10 +13,10 @@ rose : EFA2AA
 */
 
 
-@import url('https://helunix.github.io/SRBD/comfy.css');
-@import url('https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css');
-@import url('https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css');
-@import url('https://helunix.github.io/SRBD/logo2.3.png');
+@import url('https://helunix.github.io/SRBD/base/comfy.css');
+@import url('https://helunix.github.io/SRBD/others/no-scrollbar.css');
+@import url('https://helunix.github.io/SRBD/others/betterspotify.css');
+@import url('https://helunix.github.io/SRBD/images/logo2.3.png');
 
 :root {
   --background-image: url('https://i.imgur.com/Nglfni6.png');
