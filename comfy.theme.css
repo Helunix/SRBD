@@ -1,0 +1,96 @@
+/**
+ * @name comfy
+ * @author Nyria#3863
+ * @version 2.2
+ * @description Stay comfy while talking to your friends.
+ * @invite rtBQX5D3bD
+ * @source https://github.com/NYRI4/Comfy
+ * @BDEditor Comfy
+*/
+/*
+bleu : 4167B1
+rose : EFA2AA
+*/
+
+
+@import url('https://helunix.github.io/SRBD/comfy.css');
+@import url('https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css');
+@import url('https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css');
+@import url('https://helunix.github.io/SRBD/logo2.3.png');
+
+:root {
+  --background-image: url('https://i.imgur.com/Nglfni6.png');
+  --background-blur: 0px; /* Blur intensity of --background-image */
+  --opacity: 0.85; /* Opacity of overall app. | Default: .85 */
+  --accent: 0, 231, 169; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+
+  
+  --mention-color-bar: #EFA2AA;
+  --mention-color-background: rgba(198, 98, 98, 0.12);
+  --mention-color-hover: rgba(198, 98, 98, 0.15);
+  --mention-color: #F04747;
+  --unread-color: #7289DA;
+  --chat-buttons: #7289DA;
+  --avatar-radius: 9px;
+  --status-radius: 5px;
+  --server-radius: 9px;
+  --status-background: url('https://i.imgur.com/ODa8LKK.jpg');
+  --online: #43B581;
+  --iddle: #FAA61A;
+  --dnd: #F04747;
+  --offline: #747F8D;
+  --streaming: #593695;
+  --spotify-color: #1EDC62;
+  --user-buttons-spacing: 7px;
+  --user-buttons-color: #EFA2AA;
+  --role-circle: 7px;
+  --discord-logo: url('logo2.3.png');
+  --colored-emoji: grayscale(0%);
+  --disable-animations: 2s channel-unread infinite;
+}
+
+/*
+bleu : 4167B1
+rose : EFA2AA
+*/
+
+.theme-dark {
+  --background-primary: #23283D;
+  --background-secondary: #1E2233;
+  --background-secondary-alt: #191F2E;
+  --background-tertiary: #131722;
+  --background-mobile-primary: #23283D;
+  --background-mobile-secondary: #1E2233;
+  --channeltextarea-background: #191F2E;
+  --background-accent: #7289DA;
+  --background-modifier-hover: rgba(0, 0, 0, 0.06);
+  --background-modifier-active: rgba(0, 0, 0, 0.10);
+  /*--background-modifier-selected: rgba(0, 0, 0, 0.12);*/
+  --background-modifier-selected: #4167B1;
+  --deprecated-card-bg: rgba(18, 20, 31, 0.39);
+  --background-floating: #101320;
+  --deprecated-quickswitcher-input-background: #101320;
+  --scrollbar-auto-thumb: #121722;
+  --scrollbar-auto-track: #191F2E;
+  --scrollbar-thin-thumb: #141925;
+  --activity-card-background: #101320;
+  --background-message-hover: transparent;
+  --elevation-low: none;
+}
+
+.theme-light {
+  --background-primary: #23283D;
+  --background-secondary: #1E2233;
+  --background-secondary-alt: #191F2E;
+  --background-tertiary: #101320;
+  --background-accent: #7289DA;
+  --background-modifier-hover: #262B41;
+  --background-modifier-active: #262B41;
+  --header-primary: #fff;
+  --header-secondary: #B1B5B9;
+  --text-normal: #8E9297;
+}
+
+/* Any custom CSS below here */
+
+
