@@ -281,6 +281,20 @@
   box-sizing: border-box;
 }
 
+:root .scroller-RfJjkV { /*student hub. hasn't found anything else it is for now*/
+  padding: 0 !important;
+}
+:root .scroller-RfJjkV .headerImage-1c8Lrb { /*header image for student hub*/
+  position: relative;
+  top: -8px;
+  border-radius: 0;
+  -webkit-mask: linear-gradient(black, transparent);
+}
+:root .scroller-RfJjkV .guildListSection-27K5In, /*stuend hub content*/
+:root .scroller-RfJjkV .footerDescription-3D1fe9 {
+  padding: 0 32px 32px;
+  box-sizing: border-box;
+}
 
 
 
@@ -303,40 +317,9 @@
 
 
 
-:root .scroller-RfJjkV {
-  padding: 0 !important;
-}
-:root .scroller-RfJjkV .headerImage-1c8Lrb {
-  position: relative;
-  top: -8px;
-  border-radius: 0;
-  -webkit-mask: linear-gradient(black, transparent);
-}
-:root .scroller-RfJjkV .guildListSection-27K5In,
-:root .scroller-RfJjkV .footerDescription-3D1fe9 {
-  padding: 0 32px 32px;
-  box-sizing: border-box;
-}
-:root .css-bcsufo-menu {
-  background: var(--background-secondary-alt);
-}
-:root .css-1a1o7fb-control,
-:root .css-2dw5y-control,
-:root .css-p0ralp-control {
-  background: var(--background-secondary);
-}
-:root .itemInner-3k3Sn6 {
-  padding: 8px;
-  margin-left: 0;
-}
-:root .header-224ffR {
-  margin: -32px -32px 0 -32px;
-  border-radius: 0;
-}
-:root .header-224ffR .headerImage-Xy5R7m {
-  border-radius: 0;
-  -webkit-mask: linear-gradient(black, transparent);
-}
+
+
+
 :root .theme-light .root-1CAIjD,
 :root .theme-light .footer-IubaaS {
   box-shadow: none;
