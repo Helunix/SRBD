@@ -130,6 +130,20 @@
   overflow: hidden;
 }
 
+
+:root .imageLoading-2uloYN { /*loading emoji*/
+  background-image: none !important;
+  /*background-color: var(--background-primary);*/
+  border-radius: 8px;
+}
+:root .contentWrapper-3vHNP2 { /*emoji menu*/
+  grid-row-gap: 20px;
+  padding-top: 8px;
+}
+:root .contentWrapper-3vHNP2 .arrow-2HswgU { /*arrows in emoji menu*/
+  display: none;
+}
+
 :root .navList-YSb9UB > *:not(#gif-picker-tab).navButton-1XuvI-::after { /*emoji & sticker text*/
   position: absolute;
   content: "";
@@ -191,9 +205,8 @@
 :root .reactionSelected-1aMb2K { /*selected reaction*/
   background-color: rgba(110, 133, 211, 0.1294117647);
 }
-:root .invite-3uuHYQ { /*mighe be invitation for music or games ?*/
+:root .invite-3uuHYQ { /*spotify invitation, might also be for games*/
   background-color: var(--background-secondary);
-  background-color: blue;
   border-color: transparent;
 }
 :root .attachment-1PZZB2 { /*no idea*/
