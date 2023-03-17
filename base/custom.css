@@ -107,9 +107,8 @@
 :root .autocompleteRow-14iwvH .base-2v-uc0 { /*each element(person/role), might also be "members" label and bar in @ autocomplete menu*/
   border-radius: 0;
 }
-:root .autocompleteRow-14iwvH:first-of-type, /*not sure what those two are*/
-:root .autocompleteRow-14iwvH .option-Tt7anD {
-  background-color: purple;
+:root .autocompleteRow-14iwvH:first-of-type, /*first command (ex :/spoiler)*/
+:root .autocompleteRow-14iwvH .option-Tt7anD { /*command after the /thingie*/
   /*background-color: var(--background-tertiary);*/
 }
 :root .autocomplete-3NRXG8 { /*whole autocomplete menu background*/
@@ -152,10 +151,9 @@
   width: 40px;
   padding: 8px;
 }
-:root .navButtonActive-1EqC5l,/*not sure*/
+:root .navButtonActive-1EqC5l,/*active navigation button (gif/sticker/emoji*/
 :root .emojiItem-277VFM.emojiItemSelected-2Lg50V { /*hovered emoji*/
   /*background-color: rgba(110, 133, 211, 0.1294117647);*/
-  background-color: aqua;
 }
 
 :root .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ { /*hovered sticker*/
