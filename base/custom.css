@@ -186,7 +186,7 @@
 }
 :root .contentWarningPopout-WKdbDG { /*warning when posting discord authentification token*/
   /*background-color: var(--background-secondary);*/
-  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif') ;
+  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
   background-size: contain;
 }
 
@@ -212,6 +212,79 @@
   border: none;
 }
 
+:root .wrapperAudio-1Bzv_Z { /*audio file background*/
+  padding: 10px 0 0 0;
+  border-color: transparent;
+}
+:root .audioMetadata-1Hrt8T { /*audio file information (title, size, etc.)*/
+  padding: 5px 10px;
+}
+:root .audioControls-3fmemK { /*audio file controls*/
+  border-radius: 0;
+}
+
+:root .hljs.scrollbar-3vVt8d { /*inside of file (like .txt or code) display block*/
+  background-color: var(--background-secondary) !important;
+}
+:root .markup-eYLPri code { /*markup code message*/
+  background: var(--deprecated-card-bg);
+}
+:root .emptyChannelIcon-1YdEz2 { /*icon at the start of channel*/
+  position: relative;
+  background-color: transparent;
+}
+:root .emptyChannelIcon-1YdEz2::after { /*also icon at the start of channel, but not the same*/
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-experiment);
+  border-radius: 8px;
+}
+
+:root .guilds-2JjMmN .scroller-3X7KbA { /*server selection area*/
+  /*contain: none !important;*/
+  padding-bottom: 170px;
+}
+:root .expandedFolderBackground-1kSAf6 { /*folder in server selection area*/
+  border-radius: var(--server-radius);
+}
+:root .folder-241Joy { /*only the folder and not elements ?*/
+  background-color: transparent;
+}
+:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ { /*categories/elements in discover section*/
+  margin-left: 0;
+}
+:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ .itemInner-3e_4G4 { /*each category/element in discover section*/
+  padding: 8px;
+  border-radius: 0;
+}
+
+:root .pageWrapper-2PwDoS { /*explore page, but actual content : not the element secion*/
+  background-color: var(--background-primary);
+}
+:root .pageWrapper-2PwDoS .scroller-3j5xK2 { /*not sure what the difference with above is*/
+  padding: 0 !important;
+}
+:root .pageWrapper-2PwDoS .headerImage-2D5D-v { /*image at the top of explore section*/
+  position: relative;
+  top: -8px;
+  border-radius: 0;
+  -webkit-mask: linear-gradient(black, transparent);
+}
+:root .pageWrapper-2PwDoS .guildListSection-3UxZHY { /*elements in the actual page (server list)*/
+  padding: 0 32px 32px;
+  box-sizing: border-box;
+}
+
+
+
+
+
 
 
 
@@ -228,68 +301,8 @@
 
 
 
-:root .audioMetadata-1Hrt8T {
-  padding: 5px 10px;
-}
-:root .audioControls-3fmemK {
-  border-radius: 0;
-}
-:root .hljs.scrollbar-3vVt8d {
-  background-color: var(--background-secondary) !important;
-}
-:root .markup-eYLPri code {
-  background: var(--deprecated-card-bg);
-}
-:root .emptyChannelIcon-1YdEz2 {
-  position: relative;
-  background-color: transparent;
-}
-:root .emptyChannelIcon-1YdEz2::after {
-  content: "";
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--brand-experiment);
-  border-radius: 8px;
-}
 
-:root .guilds-2JjMmN .scroller-3X7KbA {
-  contain: none !important;
-  padding-bottom: 170px;
-}
-:root .expandedFolderBackground-1kSAf6 {
-  border-radius: var(--server-radius);
-}
-:root .folder-241Joy {
-  background-color: transparent;
-}
-:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ {
-  margin-left: 0;
-}
-:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ .itemInner-3e_4G4 {
-  padding: 8px;
-  border-radius: 0;
-}
-:root .pageWrapper-2PwDoS {
-  background-color: var(--background-primary);
-}
-:root .pageWrapper-2PwDoS .scroller-3j5xK2 {
-  padding: 0 !important;
-}
-:root .pageWrapper-2PwDoS .headerImage-2D5D-v {
-  position: relative;
-  top: -8px;
-  border-radius: 0;
-  -webkit-mask: linear-gradient(black, transparent);
-}
-:root .pageWrapper-2PwDoS .guildListSection-3UxZHY {
-  padding: 0 32px 32px;
-  box-sizing: border-box;
-}
+
 :root .scroller-RfJjkV {
   padding: 0 !important;
 }
