@@ -27,7 +27,6 @@
 
 :root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD:hover { /* avatar background hover */
     opacity: 1;
-    background-color: #00FF00;
   }
   
 :root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD + .nameTag-sc-gpq { /* username + status */
@@ -219,26 +218,7 @@
 
 
 
-:root .embedSpotify-1rDvOE {
-  border-radius: 5px;
-}
-:root .tile-2mmK5T {
-  background-color: var(--background-secondary);
-}
-:root .tileHorizontal-1DBMDZ.tile-2mmK5T:hover {
-  background-color: var(--background-secondary-alt);
-}
-:root .invalidPoop--w1123 {
-  background-color: rgba(0, 0, 0, 0.103);
-}
-:root .spoilerText-27bIiA.hidden-3B-Rum,
-:root .spoilerText-27bIiA.hidden-3B-Rum:hover {
-  background-color: var(--background-secondary-alt);
-}
-:root .wrapperAudio-1Bzv_Z {
-  padding: 10px 0 0 0;
-  border-color: transparent;
-}
+
 :root .audioMetadata-1Hrt8T {
   padding: 5px 10px;
 }
