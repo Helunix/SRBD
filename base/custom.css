@@ -72,6 +72,24 @@
   background-color: var(--mention-color-hover) !important;
 }
 
+/*message error bar*/
+:root .messagesErrorBar-1IQ1rH { /*failed to load messages*/
+  border-radius: 15px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+:root .messagesErrorBar-1IQ1rH:active { /*failed to load messages on click*/
+  margin-bottom: 14px;
+  background-color: white;
+}
+:root .newMessagesBar-1hF-9G { /*x new messages since x bar*/
+  /*background-color: var(--brand-experiment);*/
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+
+
 /*@someone */
 :root .wrapper-1ZcZW-:not([style]) { /* @someone text */
   position: relative;
@@ -246,6 +264,14 @@
   border-radius: 8px;
 }
 
+:root .embedSpotify-1rDvOE { /*spotify embed (tracks in chat)*/
+  border-radius: 5px;
+}
+
+
+
+
+
 :root .guilds-2JjMmN .scroller-3X7KbA { /*server selection area*/
   /*contain: none !important;*/
   padding-bottom: 170px;
@@ -302,10 +328,275 @@
 
 
 
+:root .unreadMentionsBar-ZXXoOH .text-2GsXbW { /*new notification/ping/friend resquest (hidden)*/
+  display: none;
+}
+:root .unreadMentionsIndicatorTop-2bTgUU { /*friend menu, but might only be this when there's a notification*/
+  width: 100%;
+  height: 50px;
+  top: -7px;
+  padding: 0;
+}
+:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH { /*i'm pretty sure this thing is hidden all the time, but i'll keep it here just in case*/
+  border-radius: 0;
+  /*background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));*/
+  background: yellow;
+  transition: 100ms;
+}
+:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH:active {
+  /*background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));*/
+  background-color: crimson;
+}
+:root .unreadMentionsIndicatorBottom-3RJMnQ { /*new message zone*/
+  width: 100%;
+  height: 15px;
+  padding: 0;
+}
+:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH { /*new message zone, at the bottom-left of the screen (NOT in chatbox)*/
+  border-radius: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
+}
+:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH:active { /*same message zone as above, but when clicked*/
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
+}
+
+:root .lowerBadge-3j0ZAg { /*zones where notification dots would be*/
+  top: 0;
+  left: 0;
+}
+:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S { /*text and/or notification dot*/
+  background-color: var(--mention-color) !important;
+}
+:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S::before { /*seems to be the actual text/dot of the notification dot*/
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: inherit;
+  border-radius: 100%;
+  z-index: -1;
+  animation: var(--disable-animations), 2s pulse infinite;
+  will-change: transform;
+}
+@keyframes pulse { /*probably has to do with mentions*/
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #e91e63;
+  }
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
 
 
 
 
+:root #guild-header-popout .item-5ApiZt {/*server menu (left click on server name*/
+  flex-direction: row-reverse;
+}
+:root #guild-header-popout .item-5ApiZt .iconContainer-Ksy8Oj { /*icon zones for server menu*/
+  margin: 0 8px 0 0;
+}
+:root #guild-header-popout .icon-eUBS01 { /*icon I can't find for server menu, probably */
+  width: 100%;
+  height: 100%;
+  background-color: #e91e63;
+}
+:root #guild-header-popout-premium-subscribe:hover,
+:root #guild-header-popout-premium-subscribe:active:not(.hideInteraction-2jPGL_), /*all these have to do wth server boost icon hover*/
+:root #guild-header-popout-premium-subscribe.focused-3LIdPu {
+  background-color: rgba(255, 115, 250, 0.1098039216);
+}
+:root #guild-header-popout-premium-subscribe .icon-3XHs8t { /*server boost icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-invite-people { /*invite people text*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-invite-people:hover,
+:root #guild-header-popout-invite-people:active:not(.hideInteraction-2jPGL_), /*all these have to do with invite people icon hover*/
+:root #guild-header-popout-invite-people.focused-3LIdPu {
+  background-color: rgba(103, 123, 196, 0.1176470588);
+}
+:root #guild-header-popout-invite-people .icon-3XHs8t { /*invite people icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-settings:hover,
+:root #guild-header-popout-settings:active:not(.hideInteraction-2jPGL_), /*all these have to do with server settings hover*/
+:root #guild-header-popout-settings.focused-3LIdPu {
+  background-color: rgba(84, 110, 122, 0.1176470588);
+}
+:root #guild-header-popout-settings .icon-3XHs8t {/*server settings icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-insights:hover,
+:root #guild-header-popout-insights:active:not(.hideInteraction-2jPGL_), /*must have to do with insights hover*/
+:root #guild-header-popout-insights.focused-3LIdPu {
+  background-color: rgba(26, 188, 156, 0.137254902);
+}
+:root #guild-header-popout-insights .icon-3XHs8t { /*insights icon (?)*/
+  color: #EFA2AA;
+  background-color: #00FF00;
+}
+:root #guild-header-popout-create-channel:hover,
+:root #guild-header-popout-create-channel:active:not(.hideInteraction-2jPGL_), /*create channel hover*/
+:root #guild-header-popout-create-channel.focused-3LIdPu {
+  background-color: rgba(233, 30, 98, 0.1294117647);
+}
+:root #guild-header-popout-create-channel .icon-3XHs8t { /*create channel icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-create-category:hover,
+:root #guild-header-popout-create-category:active:not(.hideInteraction-2jPGL_), /*you know the drill*/
+:root #guild-header-popout-create-category.focused-3LIdPu {
+  background-color: rgba(234, 161, 78, 0.0745098039);
+}
+:root #guild-header-popout-create-category .icon-3XHs8t { /*create category icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-create-event:hover,
+:root #guild-header-popout-create-event:active:not(.hideInteraction-2jPGL_), /*once again*/
+:root #guild-header-popout-create-event.focused-3LIdPu {
+  background-color: rgba(237, 233, 230, 0.0666666667);
+}
+:root #guild-header-popout-create-event .icon-3XHs8t > path:first-child { /*little plus on create event icon*/
+  fill: #EFA2AA;
+}
+:root #guild-header-popout-create-event .icon-3XHs8t > path:last-child { /*inside of event icon*/
+  fill: #EFA2AA;
+}
+:root #guild-header-popout-active-threads:hover,
+:root #guild-header-popout-active-threads:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-active-threads.focused-3LIdPu {
+  background-color: rgba(84, 136, 247, 0.1921568627);
+}
+:root #guild-header-popout-active-threads .icon-3XHs8t { /* active threads icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-application-directory:hover,
+:root #guild-header-popout-application-directory:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-application-directory.focused-3LIdPu {
+  background-color: rgba(48, 73, 87, 0.0745098039);
+}
+:root #guild-header-popout-application-directory .icon-3XHs8t {/*app directory icon*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-notifications:hover,
+:root #guild-header-popout-notifications:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-notifications.focused-3LIdPu {
+  background-color: rgba(233, 187, 72, 0.0823529412);
+}
+:root #guild-header-popout-notifications .icon-3XHs8t { /*notification settings*/
+  color: #EFA2AA;
+}
+:root #guild-header-popout-privacy:hover,
+:root #guild-header-popout-privacy:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-privacy.focused-3LIdPu {
+  background-color: rgba(74, 131, 212, 0.0941176471);
+}
+:root #guild-header-popout-privacy .icon-3XHs8t { /*privacy settings*/
+  color: #4a84d4;
+}
+:root #guild-header-popout-change-nickname:hover,
+:root #guild-header-popout-change-nickname:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-change-nickname.focused-3LIdPu {
+  background-color: rgba(67, 181, 130, 0.0941176471);
+}
+:root #guild-header-popout-change-nickname .icon-3XHs8t { /*change nickname / rename icon*/
+  color: #43b581;
+}
+:root #guild-header-popout-hide-muted-channels:hover,
+:root #guild-header-popout-hide-muted-channels:active:not(.hideInteraction-2jPGL_),
+:root #guild-header-popout-hide-muted-channels.focused-3LIdPu {
+  background-color: rgba(92, 110, 177, 0.0901960784);
+}
+:root #guild-header-popout-hide-muted-channels:hover svg > path:first-child {/*probably hide muted channels checkbox*/
+  color: var(--control-brand-foreground);
+}
+:root #guild-header-popout-hide-muted-channels:hover svg > path:last-child { /*checkmark on hide muted channels*/
+  color: #fff;
+}
+
+
+
+:root .mainContent-uDGa6R .arrow-2HswgU { /*collapse channel arrow*/
+  display: none;
+}
+:root .spine-29OFwR { /*thread icon ?*/
+  z-index: 1;
+}
+:root .container-1-ERn5 { /*server menu (where server name is)*/
+  background: var(--background-secondary);
+  z-index: 3;
+}
+:root .unreadTop-1DJtGv {/*ne message area (top)*/
+  top: -9px;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+}
+:root .unreadTop-1DJtGv .unreadBar-elBRZx.mention-3XBnnZ { /*new mention bar (top)*/
+  border-radius: 0;
+  background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
+}
+:root .unreadTop-1DJtGv .unreadBar-elBRZx.unread-2wipsx { /*new message bar (top)*/
+  border-radius: 0;
+  background: linear-gradient(var(--unread-color), rgba(0, 0, 0, 0));
+}
+:root .unreadBottom-3Ojk6R {/*new message area (bottom)*/
+  width: 100%;
+  height: 15px;
+  padding: 0;
+}
+:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.mention-3XBnnZ { /*new mention bar (bottom)*/
+  border-radius: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
+}
+:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.unread-2wipsx {/*new message bar (bottom)*/
+  border-radius: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), var(--unread-color));
+}
+:root .unreadBar-elBRZx > .text-2GsXbW {
+  display: none;
+}
+
+
+:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S { /*mention/notification dot on the right of channel*/
+  background-color: var(--mention-color) !important;
+}
+:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S::before { /*same thing or similar*/
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: inherit;
+  border-radius: 100%;
+  z-index: -1;
+  animation: var(--disable-animations), 2s pulse infinite;
+  will-change: transform;
+}
+:root .unread-36eUEm { /*notification dot on the left of channel*/
+  top: 54%;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  z-index: 1;
+  background-color: var(--unread-color);
+  border-radius: 10px;
+}
+:root .unread-36eUEm::before { /*same thing as above (or similar)*/
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: inherit;
+  border-radius: 100%;
+  z-index: 1;
+  animation: var(--disable-animations), pulse 2s infinite;
+  will-change: transform;
+}
 
 
 
@@ -320,285 +611,13 @@
 
 
 
-:root .theme-light .root-1CAIjD,
-:root .theme-light .footer-IubaaS {
-  box-shadow: none;
-}
-:root .theme-light .lookFilled-yCfaCM.colorGrey-2iAG-B {
-  background-color: var(--brand-experiment);
-}
-:root .theme-light .contents-3ca1mk {
-  color: #fff;
-}
-:root .theme-light .templatesList-uohY49,
-:root .theme-light .optionsList-dmHy1l {
-  padding: 0 !important;
-  border-radius: 0;
-}
-:root .theme-light .templatesList-uohY49 .container-x8Y1ix,
-:root .theme-light .optionsList-dmHy1l .container-x8Y1ix {
-  border: none;
-  border-radius: 0;
-}
-:root .theme-light .templatesList-uohY49 .optionHeader-27AHfD,
-:root .theme-light .optionsList-dmHy1l .optionHeader-27AHfD {
-  text-align: center;
-  margin: 12px 0;
-}
-:root .theme-light .createGuild-2m1V10 {
-  padding: 10px !important;
-}
-:root .panels-3wFtMD > .container-YkUktl {
-  height: 0;
-}
-:root .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 72px;
-  padding: 20px 0 10px 0;
-  flex-direction: column;
-  background: linear-gradient(transparent, var(--background-tertiary) 15%);
-}
-:root .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF > .button-12Fmur {
-  color: var(--user-buttons-color);
-  margin: var(--user-buttons-spacing) auto 0 auto;
-}
-:root .inner-1ilYF7 > .modal-2RrUKJ > .header-1ffhsl,
-:root .modal-2RrUKJ,
-:root .inner-1ilYF7 > .modal-2RrUKJ > .scrollerBase-1Pkza4 {
-  background: var(--background-secondary);
-}
-:root .unreadMentionsBar-ZXXoOH .text-2GsXbW {
-  display: none;
-}
-:root .unreadMentionsIndicatorTop-2bTgUU {
-  width: 100%;
-  height: 50px;
-  top: -7px;
-  padding: 0;
-}
-:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH {
-  border-radius: 0;
-  background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
-  transition: 100ms;
-}
-:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH:active {
-  background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
-}
-:root .unreadMentionsIndicatorBottom-3RJMnQ {
-  width: 100%;
-  height: 15px;
-  padding: 0;
-}
-:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH {
-  border-radius: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
-}
-:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH:active {
-  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
-}
-:root .lowerBadge-3j0ZAg {
-  top: 0;
-  left: 0;
-}
-:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S {
-  background-color: var(--mention-color) !important;
-}
-:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: -1;
-  animation: var(--disable-animations), 2s pulse infinite;
-  will-change: transform;
-}
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.75);
-    opacity: 0;
-  }
-}
-:root #guild-header-popout .item-5ApiZt {
-  flex-direction: row-reverse;
-}
-:root #guild-header-popout .item-5ApiZt .iconContainer-Ksy8Oj {
-  margin: 0 8px 0 0;
-}
-:root #guild-header-popout .icon-eUBS01 {
-  width: 100%;
-  height: 100%;
-}
-:root #guild-header-popout-premium-subscribe:hover, :root #guild-header-popout-premium-subscribe:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-premium-subscribe.focused-3LIdPu {
-  background-color: rgba(255, 115, 250, 0.1098039216);
-}
-:root #guild-header-popout-premium-subscribe .icon-3XHs8t {
-  color: #ff73fa;
-}
-:root #guild-header-popout-invite-people {
-  color: #677bc4;
-}
-:root #guild-header-popout-invite-people:hover, :root #guild-header-popout-invite-people:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-invite-people.focused-3LIdPu {
-  background-color: rgba(103, 123, 196, 0.1176470588);
-}
-:root #guild-header-popout-invite-people .icon-3XHs8t {
-  color: #677bc4;
-}
-:root #guild-header-popout-settings:hover, :root #guild-header-popout-settings:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-settings.focused-3LIdPu {
-  background-color: rgba(84, 110, 122, 0.1176470588);
-}
-:root #guild-header-popout-settings .icon-3XHs8t {
-  color: #546e7a;
-}
-:root #guild-header-popout-insights:hover, :root #guild-header-popout-insights:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-insights.focused-3LIdPu {
-  background-color: rgba(26, 188, 156, 0.137254902);
-}
-:root #guild-header-popout-insights .icon-3XHs8t {
-  color: #1abc9c;
-}
-:root #guild-header-popout-create-channel:hover, :root #guild-header-popout-create-channel:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-create-channel.focused-3LIdPu {
-  background-color: rgba(233, 30, 98, 0.1294117647);
-}
-:root #guild-header-popout-create-channel .icon-3XHs8t {
-  color: #e91e63;
-}
-:root #guild-header-popout-create-category:hover, :root #guild-header-popout-create-category:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-create-category.focused-3LIdPu {
-  background-color: rgba(234, 161, 78, 0.0745098039);
-}
-:root #guild-header-popout-create-category .icon-3XHs8t {
-  color: #eaa14e;
-}
-:root #guild-header-popout-create-event:hover, :root #guild-header-popout-create-event:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-create-event.focused-3LIdPu {
-  background-color: rgba(237, 233, 230, 0.0666666667);
-}
-:root #guild-header-popout-create-event .icon-3XHs8t > path:first-child {
-  fill: #677bc4;
-}
-:root #guild-header-popout-create-event .icon-3XHs8t > path:last-child {
-  fill: #ede9e6;
-}
-:root #guild-header-popout-active-threads:hover, :root #guild-header-popout-active-threads:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-active-threads.focused-3LIdPu {
-  background-color: rgba(84, 136, 247, 0.1921568627);
-}
-:root #guild-header-popout-active-threads .icon-3XHs8t {
-  color: #5488f7;
-}
-:root #guild-header-popout-application-directory:hover, :root #guild-header-popout-application-directory:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-application-directory.focused-3LIdPu {
-  background-color: rgba(48, 73, 87, 0.0745098039);
-}
-:root #guild-header-popout-application-directory .icon-3XHs8t {
-  color: #304957;
-}
-:root #guild-header-popout-notifications:hover, :root #guild-header-popout-notifications:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-notifications.focused-3LIdPu {
-  background-color: rgba(233, 187, 72, 0.0823529412);
-}
-:root #guild-header-popout-notifications .icon-3XHs8t {
-  color: #fcd462;
-}
-:root #guild-header-popout-privacy:hover, :root #guild-header-popout-privacy:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-privacy.focused-3LIdPu {
-  background-color: rgba(74, 131, 212, 0.0941176471);
-}
-:root #guild-header-popout-privacy .icon-3XHs8t {
-  color: #4a84d4;
-}
-:root #guild-header-popout-change-nickname:hover, :root #guild-header-popout-change-nickname:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-change-nickname.focused-3LIdPu {
-  background-color: rgba(67, 181, 130, 0.0941176471);
-}
-:root #guild-header-popout-change-nickname .icon-3XHs8t {
-  color: #43b581;
-}
-:root #guild-header-popout-hide-muted-channels:hover, :root #guild-header-popout-hide-muted-channels:active:not(.hideInteraction-2jPGL_), :root #guild-header-popout-hide-muted-channels.focused-3LIdPu {
-  background-color: rgba(92, 110, 177, 0.0901960784);
-}
-:root #guild-header-popout-hide-muted-channels:hover svg > path:first-child {
-  color: var(--control-brand-foreground);
-}
-:root #guild-header-popout-hide-muted-channels:hover svg > path:last-child {
-  color: #fff;
-}
-:root .mainContent-uDGa6R .arrow-2HswgU {
-  display: none;
-}
-:root .spine-29OFwR {
-  z-index: 1;
-}
-:root .container-1-ERn5 {
-  background: var(--background-secondary);
-  z-index: 3;
-}
-:root .unreadTop-1DJtGv {
-  top: -9px;
-  z-index: 2;
-  width: 100%;
-  padding: 0;
-}
-:root .unreadTop-1DJtGv .unreadBar-elBRZx.mention-3XBnnZ {
-  border-radius: 0;
-  background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
-}
-:root .unreadTop-1DJtGv .unreadBar-elBRZx.unread-2wipsx {
-  border-radius: 0;
-  background: linear-gradient(var(--unread-color), rgba(0, 0, 0, 0));
-}
-:root .unreadBottom-3Ojk6R {
-  width: 100%;
-  height: 15px;
-  padding: 0;
-}
-:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.mention-3XBnnZ {
-  border-radius: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
-}
-:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.unread-2wipsx {
-  border-radius: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), var(--unread-color));
-}
-:root .unreadBar-elBRZx > .text-2GsXbW {
-  display: none;
-}
-:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S {
-  background-color: var(--mention-color) !important;
-}
-:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: -1;
-  animation: var(--disable-animations), 2s pulse infinite;
-  will-change: transform;
-}
-:root .unread-36eUEm {
-  top: 54%;
-  left: 5px;
-  width: 6px;
-  height: 6px;
-  z-index: 1;
-  background-color: var(--unread-color);
-  border-radius: 10px;
-}
-:root .unread-36eUEm::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: 1;
-  animation: var(--disable-animations), pulse 2s infinite;
-  will-change: transform;
-}
+
+
+
+
+
+
 :root .activityPanel-9icbyU,
 :root .container-1zzFcN {
   border-bottom: none;
