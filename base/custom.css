@@ -1,9 +1,10 @@
+:root .buttons-3dF5Kd {
+  /* message hover pop-up */
+  transition: opacity 150ms;
+}
 
-:root .buttons-3dF5Kd { /* message hover pop-up */
-    transition: opacity 150ms;
-  }
-
-:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW { /*avatar/status background*/
+:root .panels-3wFtMD>.container-YkUktl>.avatarWrapper-1B9FTW {
+  /*avatar/status background*/
   position: fixed;
   bottom: 26.5px;
   left: 327.5px;
@@ -13,37 +14,45 @@
   min-width: unset;
 }
 
-:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD { /* avatar circle, seems to change position ?*/
+:root .panels-3wFtMD>.container-YkUktl>.avatarWrapper-1B9FTW>.avatar-1EWyVD {
+  /* avatar circle, seems to change position ?*/
   width: 40px !important;
   height: 40px !important;
 }
 
-:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD .pointerEvents-2KjWnj { /* user status dot*/
-  
+:root .panels-3wFtMD>.container-YkUktl>.avatarWrapper-1B9FTW>.avatar-1EWyVD .pointerEvents-2KjWnj {
+  /* user status dot*/
+
   x: 31px;
   y: 31px;
 }
 
-:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD:hover { /* avatar background hover */
-    opacity: 1;
-  }
-  
-:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD + .nameTag-sc-gpq { /* username + status */
+:root .panels-3wFtMD>.container-YkUktl>.avatarWrapper-1B9FTW>.avatar-1EWyVD:hover {
+  /* avatar background hover */
+  opacity: 1;
+}
+
+:root .panels-3wFtMD>.container-YkUktl>.avatarWrapper-1B9FTW>.avatar-1EWyVD+.nameTag-sc-gpq {
+  /* username + status */
   display: none;
 }
 
 /* missing one here */
 
-:root .chat-2ZfjoI .form-3gdLxP { /*chatbox*/
-    padding-left: 66px;
-  }
-  
-:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX { /* you must wait x minnutes before sending message etc. chat restriction*/
+:root .chat-2ZfjoI .form-3gdLxP {
+  /*chatbox*/
+  padding-left: 66px;
+}
+
+:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX {
+  /* you must wait x minnutes before sending message etc. chat restriction*/
   z-index: unset;
 }
 
-:root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after, /*left of the chatbox*/
-:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after { /*probably is left of another type of the you must wait x to send message*/
+:root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after,
+/*left of the chatbox*/
+:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after {
+  /*probably is left of another type of the you must wait x to send message*/
   position: absolute;
   content: "";
   bottom: 2px;
@@ -53,36 +62,47 @@
   border-radius: calc(var(--avatar-radius) + 2px);
 }
 
-:root .typing-2J1mQU { /* x is typing */
+:root .typing-2J1mQU {
+  /* x is typing */
   left: 66px;
   right: 26px;
 }
 
 /*mentions*/
-:root .message-2CShn3.mentioned-Tre-dv { /*mention background*/
+:root .message-2CShn3.mentioned-Tre-dv {
+  /*mention background*/
   background-color: var(--mention-color-background);
-  
+
 }
-:root .message-2CShn3.mentioned-Tre-dv::before { /*mention left bar*/
+
+:root .message-2CShn3.mentioned-Tre-dv::before {
+  /*mention left bar*/
   background: var(--mention-color-bar);
-  
+
   padding: 1px;
 }
-:root .message-2CShn3.mentioned-Tre-dv:hover { /*mention background hover*/
+
+:root .message-2CShn3.mentioned-Tre-dv:hover {
+  /*mention background hover*/
   background-color: var(--mention-color-hover) !important;
 }
 
 /*message error bar*/
-:root .messagesErrorBar-1IQ1rH { /*failed to load messages*/
+:root .messagesErrorBar-1IQ1rH {
+  /*failed to load messages*/
   border-radius: 15px;
   padding-bottom: 0;
   margin-bottom: 15px;
 }
-:root .messagesErrorBar-1IQ1rH:active { /*failed to load messages on click*/
+
+:root .messagesErrorBar-1IQ1rH:active {
+  /*failed to load messages on click*/
   margin-bottom: 14px;
   background-color: white;
 }
-:root .newMessagesBar-1hF-9G { /*x new messages since x bar*/
+
+:root .newMessagesBar-1hF-9G {
+  /*x new messages since x bar*/
   /*background-color: var(--brand-experiment);*/
   border-radius: 50px;
   margin-top: 5px;
@@ -91,13 +111,16 @@
 
 
 /*@someone */
-:root .wrapper-1ZcZW-:not([style]) { /* @someone text */
+:root .wrapper-1ZcZW-:not([style]) {
+  /* @someone text */
   position: relative;
   /*color: var(--brand-experiment);*/
-  
+
   background: transparent;
 }
-:root .wrapper-1ZcZW-:not([style])::after { /* @someone background */
+
+:root .wrapper-1ZcZW-:not([style])::after {
+  /* @someone background */
   content: "";
   opacity: 0.1;
   top: 0;
@@ -110,7 +133,8 @@
   border-radius: inherit;
 }
 
-:root .jumpToPresentBar-1cEnH0, /* older message jump to present bar */
+:root .jumpToPresentBar-1cEnH0,
+/* older message jump to present bar */
 :root .jumpToPresentBar-1cEnH0:active {
   background-color: pink;
   margin-bottom: 13px;
@@ -118,29 +142,42 @@
   padding: 0;
 }
 
-:root .autocompleteRow-14iwvH { /*the one under gets priority, not sure what's difference. each element(person/role), might also be "members" label and bar in @ autocomplete menu */
+:root .autocompleteRow-14iwvH {
+  /*the one under gets priority, not sure what's difference. each element(person/role), might also be "members" label and bar in @ autocomplete menu */
   padding: 0;
 }
-:root .autocompleteRow-14iwvH .base-2v-uc0 { /*each element(person/role), might also be "members" label and bar in @ autocomplete menu*/
+
+:root .autocompleteRow-14iwvH .base-2v-uc0 {
+  /*each element(person/role), might also be "members" label and bar in @ autocomplete menu*/
   border-radius: 0;
 }
-:root .autocompleteRow-14iwvH:first-of-type, /*first command (ex :/spoiler)*/
-:root .autocompleteRow-14iwvH .option-Tt7anD { /*command after the /thingie*/
+
+:root .autocompleteRow-14iwvH:first-of-type,
+/*first command (ex :/spoiler)*/
+:root .autocompleteRow-14iwvH .option-Tt7anD {
+  /*command after the /thingie*/
   /*background-color: var(--background-tertiary);*/
 }
-:root .autocomplete-3NRXG8 { /*whole autocomplete menu background*/
+
+:root .autocomplete-3NRXG8 {
+  /*whole autocomplete menu background*/
   /*background: var(--background-secondary-alt);*/
 }
 
-:root .categoryHeader-OpJ1Ly, /*not sure what this is*/
-:root .autocomplete-3NRXG8 { /*whole autocomplete thing*/
+:root .categoryHeader-OpJ1Ly,
+/*not sure what this is*/
+:root .autocomplete-3NRXG8 {
+  /*whole autocomplete thing*/
   /*background: var(--background-secondary);*/
 }
 
-:root .sprite-2lxwfc { /*emoji background (grey/black and white on hover)*/
+:root .sprite-2lxwfc {
+  /*emoji background (grey/black and white on hover)*/
   /*filter: var(--colored-emoji) !important;*/
 }
-:root #emoji-picker-tab .contents-3NembX, /*emoji/sticker menu text*/
+
+:root #emoji-picker-tab .contents-3NembX,
+/*emoji/sticker menu text*/
 :root #sticker-picker-tab .contents-3NembX,
 :root #bd-emotes-tab .contents-3NembX {
   text-indent: 100%;
@@ -148,20 +185,26 @@
 }
 
 
-:root .imageLoading-2uloYN { /*loading emoji*/
+:root .imageLoading-2uloYN {
+  /*loading emoji*/
   background-image: none !important;
   /*background-color: var(--background-primary);*/
   border-radius: 8px;
 }
-:root .contentWrapper-3vHNP2 { /*emoji menu*/
+
+:root .contentWrapper-3vHNP2 {
+  /*emoji menu*/
   grid-row-gap: 20px;
   padding-top: 8px;
 }
-:root .contentWrapper-3vHNP2 .arrow-2HswgU { /*arrows in emoji menu*/
+
+:root .contentWrapper-3vHNP2 .arrow-2HswgU {
+  /*arrows in emoji menu*/
   display: none;
 }
 
-:root .navList-YSb9UB > *:not(#gif-picker-tab).navButton-1XuvI-::after { /*emoji & sticker text*/
+:root .navList-YSb9UB>*:not(#gif-picker-tab).navButton-1XuvI-::after {
+  /*emoji & sticker text*/
   position: absolute;
   content: "";
   width: 20px;
@@ -169,89 +212,136 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-:root .navList-YSb9UB #sticker-picker-tab.navButton-1XuvI-::after { /*sticker icon*/
+
+:root .navList-YSb9UB #sticker-picker-tab.navButton-1XuvI-::after {
+  /*sticker icon*/
   background-image: url("https://i.imgur.com/S79punc.png");
 }
-:root .navList-YSb9UB #emoji-picker-tab.navButton-1XuvI-::after { /*emoji icon*/
+
+:root .navList-YSb9UB #emoji-picker-tab.navButton-1XuvI-::after {
+  /*emoji icon*/
   background-image: url("https://i.imgur.com/YOshExa.png");
 }
-:root .navList-YSb9UB #bd-emotes-tab.navButton-1XuvI-::after { /*betterdiscord icon*/
+
+:root .navList-YSb9UB #bd-emotes-tab.navButton-1XuvI-::after {
+  /*betterdiscord icon*/
   background-image: url("https://i.imgur.com/efz6JwF.png");
 }
-:root .navList-YSb9UB .navButton-1XuvI- { /*gif/sticker/emoji tabs*/
+
+:root .navList-YSb9UB .navButton-1XuvI- {
+  /*gif/sticker/emoji tabs*/
   width: 40px;
   padding: 8px;
 }
-:root .navButtonActive-1EqC5l,/*active navigation button (gif/sticker/emoji*/
-:root .emojiItem-277VFM.emojiItemSelected-2Lg50V { /*hovered emoji*/
+
+:root .navButtonActive-1EqC5l,
+/*active navigation button (gif/sticker/emoji*/
+:root .emojiItem-277VFM.emojiItemSelected-2Lg50V {
+  /*hovered emoji*/
   /*background-color: rgba(110, 133, 211, 0.1294117647);*/
 }
 
-:root .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ { /*hovered sticker*/
+:root .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+  /*hovered sticker*/
   background-color: rgba(110, 133, 211, 0.1294117647);
 }
-:root .attachButton-1ijpt9 .attachButtonPlus-3IYelE, /*attach file button*/
-:root .attachButton-1ijpt9:hover .attachButtonPlus-3IYelE { /*attach file button*/
+
+:root .attachButton-1ijpt9 .attachButtonPlus-3IYelE,
+/*attach file button*/
+:root .attachButton-1ijpt9:hover .attachButtonPlus-3IYelE {
+  /*attach file button*/
   fill: var(--chat-buttons);
 }
-:root .buttonWrapper-3YFQGJ, /*gift and sticker button*/
-:root .icon-1d5zch { /*gif button*/
+
+:root .buttonWrapper-3YFQGJ,
+/*gift and sticker button*/
+:root .icon-1d5zch {
+  /*gif button*/
   color: var(--chat-buttons);
 }
-:root .buttons-uaqb-5 > .button-ejjZWC,  /*removes gift and sticker button*/
+
+:root .buttons-uaqb-5>.button-ejjZWC,
+/*removes gift and sticker button*/
 :root .stickerButton-1-nFh2 {
-    display:none;
+  display: none;
 }
-:root .contentWarningPopout-WKdbDG { /*warning when posting discord authentification token*/
+
+:root .contentWarningPopout-WKdbDG {
+  /*warning when posting discord authentification token*/
   /*background-color: var(--background-secondary);*/
   background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
   background-size: contain;
 }
 
-:root .scroller-2GkvCq { /*left side of reaction menu (on a message)*/
+:root .scroller-2GkvCq {
+  /*left side of reaction menu (on a message)*/
   /*background: var(--background-tertiary);*/
 }
-:root .container-KM8BU6, /*same as under*/
-:root .reactors-1VXca7 { /*reaction menu (on a message)*/
+
+:root .container-KM8BU6,
+/*same as under*/
+:root .reactors-1VXca7 {
+  /*reaction menu (on a message)*/
   /*background: var(--background-secondary);*/
 }
-:root .reactionSelected-1aMb2K, /*selected reaction*/
-:root .reactionDefault-1Sjj1f:hover { /* hovered reaction*/
+
+:root .reactionSelected-1aMb2K,
+/*selected reaction*/
+:root .reactionDefault-1Sjj1f:hover {
+  /* hovered reaction*/
   margin-right: 6px;
 }
-:root .reactionSelected-1aMb2K { /*selected reaction*/
+
+:root .reactionSelected-1aMb2K {
+  /*selected reaction*/
   background-color: rgba(110, 133, 211, 0.1294117647);
 }
-:root .invite-3uuHYQ { /*spotify invitation, might also be for games*/
+
+:root .invite-3uuHYQ {
+  /*spotify invitation, might also be for games*/
   background-color: var(--background-secondary);
   border-color: transparent;
 }
-:root .attachment-1PZZB2 { /*loading and/or uploading image/file */
+
+:root .attachment-1PZZB2 {
+  /*loading and/or uploading image/file */
   border: none;
 }
 
-:root .wrapperAudio-1Bzv_Z { /*audio file background*/
+:root .wrapperAudio-1Bzv_Z {
+  /*audio file background*/
   padding: 10px 0 0 0;
   border-color: transparent;
 }
-:root .audioMetadata-1Hrt8T { /*audio file information (title, size, etc.)*/
+
+:root .audioMetadata-1Hrt8T {
+  /*audio file information (title, size, etc.)*/
   padding: 5px 10px;
 }
-:root .audioControls-3fmemK { /*audio file controls*/
+
+:root .audioControls-3fmemK {
+  /*audio file controls*/
   border-radius: 0;
 }
 
-:root .hljs.scrollbar-3vVt8d { /*inside of file (like .txt or code) display block*/
+:root .hljs.scrollbar-3vVt8d {
+  /*inside of file (like .txt or code) display block*/
   background-color: var(--background-secondary) !important;
 }
-:root .markup-eYLPri code { /*markup code message*/
+
+:root .markup-eYLPri code {
+  /*markup code message*/
   background: var(--deprecated-card-bg);
 }
-:root .emptyChannelIcon-1YdEz2 { /*icon at the start of channel*/
+
+:root .emptyChannelIcon-1YdEz2 {
+  /*icon at the start of channel*/
   position: relative;
   background-color: transparent;
 }
-:root .emptyChannelIcon-1YdEz2::after { /*also icon at the start of channel, but not the same*/
+
+:root .emptyChannelIcon-1YdEz2::after {
+  /*also icon at the start of channel, but not the same*/
   content: "";
   opacity: 0.3;
   top: 0;
@@ -264,7 +354,8 @@
   border-radius: 8px;
 }
 
-:root .embedSpotify-1rDvOE { /*spotify embed (tracks in chat)*/
+:root .embedSpotify-1rDvOE {
+  /*spotify embed (tracks in chat)*/
   border-radius: 5px;
 }
 
@@ -272,61 +363,85 @@
 
 
 
-:root .guilds-2JjMmN .scroller-3X7KbA { /*server selection area*/
+:root .guilds-2JjMmN .scroller-3X7KbA {
+  /*server selection area*/
   /*contain: none !important;*/
   padding-bottom: 170px;
 }
-:root .expandedFolderBackground-1kSAf6 { /*folder in server selection area*/
+
+:root .expandedFolderBackground-1kSAf6 {
+  /*folder in server selection area*/
   border-radius: var(--server-radius);
 }
-:root .folder-241Joy { /*only the folder and not elements ?*/
+
+:root .folder-241Joy {
+  /*only the folder and not elements ?*/
   background-color: transparent;
 }
-:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ { /*categories/elements in discover section*/
+
+:root .discoverHeader-1vsvZ0~.categoryItem-Kc_HK_ {
+  /*categories/elements in discover section*/
   margin-left: 0;
 }
-:root .discoverHeader-1vsvZ0 ~ .categoryItem-Kc_HK_ .itemInner-3e_4G4 { /*each category/element in discover section*/
+
+:root .discoverHeader-1vsvZ0~.categoryItem-Kc_HK_ .itemInner-3e_4G4 {
+  /*each category/element in discover section*/
   padding: 8px;
   border-radius: 0;
 }
 
-:root .pageWrapper-2PwDoS { /*explore page, but actual content : not the element secion*/
+:root .pageWrapper-2PwDoS {
+  /*explore page, but actual content : not the element secion*/
   background-color: var(--background-primary);
 }
-:root .pageWrapper-2PwDoS .scroller-3j5xK2 { /*not sure what the difference with above is*/
+
+:root .pageWrapper-2PwDoS .scroller-3j5xK2 {
+  /*not sure what the difference with above is*/
   padding: 0 !important;
 }
-:root .pageWrapper-2PwDoS .headerImage-2D5D-v { /*image at the top of explore section*/
+
+:root .pageWrapper-2PwDoS .headerImage-2D5D-v {
+  /*image at the top of explore section*/
   position: relative;
   top: -8px;
   border-radius: 0;
   -webkit-mask: linear-gradient(black, transparent);
 }
-:root .pageWrapper-2PwDoS .guildListSection-3UxZHY { /*elements in the actual page (server list)*/
+
+:root .pageWrapper-2PwDoS .guildListSection-3UxZHY {
+  /*elements in the actual page (server list)*/
   padding: 0 32px 32px;
   box-sizing: border-box;
 }
 
-:root .scroller-RfJjkV { /*student hub. hasn't found anything else it is for now*/
+:root .scroller-RfJjkV {
+  /*student hub. hasn't found anything else it is for now*/
   padding: 0 !important;
 }
-:root .scroller-RfJjkV .headerImage-1c8Lrb { /*header image for student hub*/
+
+:root .scroller-RfJjkV .headerImage-1c8Lrb {
+  /*header image for student hub*/
   position: relative;
   top: -8px;
   border-radius: 0;
   -webkit-mask: linear-gradient(black, transparent);
 }
-:root .scroller-RfJjkV .guildListSection-27K5In, /*stuend hub content*/
+
+:root .scroller-RfJjkV .guildListSection-27K5In,
+/*stuend hub content*/
 :root .scroller-RfJjkV .footerDescription-3D1fe9 {
   padding: 0 32px 32px;
   box-sizing: border-box;
 }
 
 
-:root .panels-3wFtMD > .container-YkUktl { /*is supposed to be the user profile area, but removed since height=0*/
+:root .panels-3wFtMD>.container-YkUktl {
+  /*is supposed to be the user profile area, but removed since height=0*/
   height: 0;
 }
-:root .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF { /*user proile icons area : mute, deafen, settings/options*/
+
+:root .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF {
+  /*user proile icons area : mute, deafen, settings/options*/
   position: fixed;
   bottom: 0;
   left: 0;
@@ -336,13 +451,16 @@
   flex-direction: column;
   background: linear-gradient(transparent, var(--background-tertiary) 15%);
 }
-:root .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF > .button-12Fmur { /*individual user profile icons*/
+
+:root .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF>.button-12Fmur {
+  /*individual user profile icons*/
   color: var(--user-buttons-color);
   margin: var(--user-buttons-spacing) auto 0 auto;
 }
-:root .inner-1ilYF7 > .modal-2RrUKJ > .header-1ffhsl,
+
+:root .inner-1ilYF7>.modal-2RrUKJ>.header-1ffhsl,
 :root .modal-2RrUKJ,
-:root .inner-1ilYF7 > .modal-2RrUKJ > .scrollerBase-1Pkza4 {
+:root .inner-1ilYF7>.modal-2RrUKJ>.scrollerBase-1Pkza4 {
   /*background: var(--background-secondary);*/
   background-color: green;
 }
@@ -350,46 +468,63 @@
 
 
 
-:root .unreadMentionsBar-ZXXoOH .text-2GsXbW { /*new notification/ping/friend resquest (hidden)*/
+:root .unreadMentionsBar-ZXXoOH .text-2GsXbW {
+  /*new notification/ping/friend resquest (hidden)*/
   display: none;
 }
-:root .unreadMentionsIndicatorTop-2bTgUU { /*friend menu, but might only be this when there's a notification*/
+
+:root .unreadMentionsIndicatorTop-2bTgUU {
+  /*friend menu, but might only be this when there's a notification*/
   width: 100%;
   height: 50px;
   top: -7px;
   padding: 0;
 }
-:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH { /*i'm pretty sure this thing is hidden all the time, but i'll keep it here just in case*/
+
+:root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH {
+  /*i'm pretty sure this thing is hidden all the time, but i'll keep it here just in case*/
   border-radius: 0;
   /*background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));*/
   background: yellow;
   transition: 100ms;
 }
+
 :root .unreadMentionsIndicatorTop-2bTgUU .unreadMentionsBar-ZXXoOH:active {
   /*background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));*/
   background-color: crimson;
 }
-:root .unreadMentionsIndicatorBottom-3RJMnQ { /*new message zone*/
+
+:root .unreadMentionsIndicatorBottom-3RJMnQ {
+  /*new message zone*/
   width: 100%;
   height: 15px;
   padding: 0;
 }
-:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH { /*new message zone, at the bottom-left of the screen (NOT in chatbox)*/
+
+:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH {
+  /*new message zone, at the bottom-left of the screen (NOT in chatbox)*/
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
 }
-:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH:active { /*same message zone as above, but when clicked*/
+
+:root .unreadMentionsIndicatorBottom-3RJMnQ .unreadMentionsBar-ZXXoOH:active {
+  /*same message zone as above, but when clicked*/
   background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
 }
 
-:root .lowerBadge-3j0ZAg { /*zones where notification dots would be*/
+:root .lowerBadge-3j0ZAg {
+  /*zones where notification dots would be*/
   top: 0;
   left: 0;
 }
-:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S { /*text and/or notification dot*/
+
+:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S {
+  /*text and/or notification dot*/
   background-color: var(--mention-color) !important;
 }
-:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S::before { /*seems to be the actual text/dot of the notification dot*/
+
+:root .lowerBadge-3j0ZAg .numberBadge-37OJ3S::before {
+  /*seems to be the actual text/dot of the notification dot*/
   content: "";
   position: absolute;
   width: 16px;
@@ -400,12 +535,16 @@
   animation: var(--disable-animations), 2s pulse infinite;
   will-change: transform;
 }
-@keyframes pulse { /*probably has to do with mentions*/
+
+@keyframes pulse {
+
+  /*probably has to do with mentions*/
   0% {
     transform: scale(1);
     opacity: 1;
     background-color: #e91e63;
   }
+
   100% {
     transform: scale(1.75);
     opacity: 0;
@@ -415,180 +554,258 @@
 
 
 
-:root #guild-header-popout .item-5ApiZt {/*server menu (left click on server name*/
+:root #guild-header-popout .item-5ApiZt {
+  /*server menu (left click on server name*/
   flex-direction: row-reverse;
 }
-:root #guild-header-popout .item-5ApiZt .iconContainer-Ksy8Oj { /*icon zones for server menu*/
+
+:root #guild-header-popout .item-5ApiZt .iconContainer-Ksy8Oj {
+  /*icon zones for server menu*/
   margin: 0 8px 0 0;
 }
-:root #guild-header-popout .icon-eUBS01 { /*icon I can't find for server menu, probably */
+
+:root #guild-header-popout .icon-eUBS01 {
+  /*icon I can't find for server menu, probably */
   width: 100%;
   height: 100%;
   background-color: #e91e63;
 }
+
 :root #guild-header-popout-premium-subscribe:hover,
-:root #guild-header-popout-premium-subscribe:active:not(.hideInteraction-2jPGL_), /*all these have to do wth server boost icon hover*/
+:root #guild-header-popout-premium-subscribe:active:not(.hideInteraction-2jPGL_),
+/*all these have to do wth server boost icon hover*/
 :root #guild-header-popout-premium-subscribe.focused-3LIdPu {
   background-color: rgba(255, 115, 250, 0.1098039216);
 }
-:root #guild-header-popout-premium-subscribe .icon-3XHs8t { /*server boost icon*/
+
+:root #guild-header-popout-premium-subscribe .icon-3XHs8t {
+  /*server boost icon*/
   color: #EFA2AA;
 }
-:root #guild-header-popout-invite-people { /*invite people text*/
+
+:root #guild-header-popout-invite-people {
+  /*invite people text*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-invite-people:hover,
-:root #guild-header-popout-invite-people:active:not(.hideInteraction-2jPGL_), /*all these have to do with invite people icon hover*/
+:root #guild-header-popout-invite-people:active:not(.hideInteraction-2jPGL_),
+/*all these have to do with invite people icon hover*/
 :root #guild-header-popout-invite-people.focused-3LIdPu {
   background-color: rgba(103, 123, 196, 0.1176470588);
 }
-:root #guild-header-popout-invite-people .icon-3XHs8t { /*invite people icon*/
+
+:root #guild-header-popout-invite-people .icon-3XHs8t {
+  /*invite people icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-settings:hover,
-:root #guild-header-popout-settings:active:not(.hideInteraction-2jPGL_), /*all these have to do with server settings hover*/
+:root #guild-header-popout-settings:active:not(.hideInteraction-2jPGL_),
+/*all these have to do with server settings hover*/
 :root #guild-header-popout-settings.focused-3LIdPu {
   background-color: rgba(84, 110, 122, 0.1176470588);
 }
-:root #guild-header-popout-settings .icon-3XHs8t {/*server settings icon*/
+
+:root #guild-header-popout-settings .icon-3XHs8t {
+  /*server settings icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-insights:hover,
-:root #guild-header-popout-insights:active:not(.hideInteraction-2jPGL_), /*must have to do with insights hover*/
+:root #guild-header-popout-insights:active:not(.hideInteraction-2jPGL_),
+/*must have to do with insights hover*/
 :root #guild-header-popout-insights.focused-3LIdPu {
   background-color: rgba(26, 188, 156, 0.137254902);
 }
-:root #guild-header-popout-insights .icon-3XHs8t { /*insights icon (?)*/
+
+:root #guild-header-popout-insights .icon-3XHs8t {
+  /*insights icon (?)*/
   color: #EFA2AA;
   background-color: #00FF00;
 }
+
 :root #guild-header-popout-create-channel:hover,
-:root #guild-header-popout-create-channel:active:not(.hideInteraction-2jPGL_), /*create channel hover*/
+:root #guild-header-popout-create-channel:active:not(.hideInteraction-2jPGL_),
+/*create channel hover*/
 :root #guild-header-popout-create-channel.focused-3LIdPu {
   background-color: rgba(233, 30, 98, 0.1294117647);
 }
-:root #guild-header-popout-create-channel .icon-3XHs8t { /*create channel icon*/
+
+:root #guild-header-popout-create-channel .icon-3XHs8t {
+  /*create channel icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-create-category:hover,
-:root #guild-header-popout-create-category:active:not(.hideInteraction-2jPGL_), /*you know the drill*/
+:root #guild-header-popout-create-category:active:not(.hideInteraction-2jPGL_),
+/*you know the drill*/
 :root #guild-header-popout-create-category.focused-3LIdPu {
   background-color: rgba(234, 161, 78, 0.0745098039);
 }
-:root #guild-header-popout-create-category .icon-3XHs8t { /*create category icon*/
+
+:root #guild-header-popout-create-category .icon-3XHs8t {
+  /*create category icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-create-event:hover,
-:root #guild-header-popout-create-event:active:not(.hideInteraction-2jPGL_), /*once again*/
+:root #guild-header-popout-create-event:active:not(.hideInteraction-2jPGL_),
+/*once again*/
 :root #guild-header-popout-create-event.focused-3LIdPu {
   background-color: rgba(237, 233, 230, 0.0666666667);
 }
-:root #guild-header-popout-create-event .icon-3XHs8t > path:first-child { /*little plus on create event icon*/
+
+:root #guild-header-popout-create-event .icon-3XHs8t>path:first-child {
+  /*little plus on create event icon*/
   fill: #EFA2AA;
 }
-:root #guild-header-popout-create-event .icon-3XHs8t > path:last-child { /*inside of event icon*/
+
+:root #guild-header-popout-create-event .icon-3XHs8t>path:last-child {
+  /*inside of event icon*/
   fill: #EFA2AA;
 }
+
 :root #guild-header-popout-active-threads:hover,
 :root #guild-header-popout-active-threads:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-active-threads.focused-3LIdPu {
   background-color: rgba(84, 136, 247, 0.1921568627);
 }
-:root #guild-header-popout-active-threads .icon-3XHs8t { /* active threads icon*/
+
+:root #guild-header-popout-active-threads .icon-3XHs8t {
+  /* active threads icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-application-directory:hover,
 :root #guild-header-popout-application-directory:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-application-directory.focused-3LIdPu {
   background-color: rgba(48, 73, 87, 0.0745098039);
 }
-:root #guild-header-popout-application-directory .icon-3XHs8t {/*app directory icon*/
+
+:root #guild-header-popout-application-directory .icon-3XHs8t {
+  /*app directory icon*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-notifications:hover,
 :root #guild-header-popout-notifications:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-notifications.focused-3LIdPu {
   background-color: rgba(233, 187, 72, 0.0823529412);
 }
-:root #guild-header-popout-notifications .icon-3XHs8t { /*notification settings*/
+
+:root #guild-header-popout-notifications .icon-3XHs8t {
+  /*notification settings*/
   color: #EFA2AA;
 }
+
 :root #guild-header-popout-privacy:hover,
 :root #guild-header-popout-privacy:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-privacy.focused-3LIdPu {
   background-color: rgba(74, 131, 212, 0.0941176471);
 }
-:root #guild-header-popout-privacy .icon-3XHs8t { /*privacy settings*/
+
+:root #guild-header-popout-privacy .icon-3XHs8t {
+  /*privacy settings*/
   color: #4a84d4;
 }
+
 :root #guild-header-popout-change-nickname:hover,
 :root #guild-header-popout-change-nickname:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-change-nickname.focused-3LIdPu {
   background-color: rgba(67, 181, 130, 0.0941176471);
 }
-:root #guild-header-popout-change-nickname .icon-3XHs8t { /*change nickname / rename icon*/
+
+:root #guild-header-popout-change-nickname .icon-3XHs8t {
+  /*change nickname / rename icon*/
   color: #43b581;
 }
+
 :root #guild-header-popout-hide-muted-channels:hover,
 :root #guild-header-popout-hide-muted-channels:active:not(.hideInteraction-2jPGL_),
 :root #guild-header-popout-hide-muted-channels.focused-3LIdPu {
   background-color: rgba(92, 110, 177, 0.0901960784);
 }
-:root #guild-header-popout-hide-muted-channels:hover svg > path:first-child {/*probably hide muted channels checkbox*/
+
+:root #guild-header-popout-hide-muted-channels:hover svg>path:first-child {
+  /*probably hide muted channels checkbox*/
   color: var(--control-brand-foreground);
 }
-:root #guild-header-popout-hide-muted-channels:hover svg > path:last-child { /*checkmark on hide muted channels*/
+
+:root #guild-header-popout-hide-muted-channels:hover svg>path:last-child {
+  /*checkmark on hide muted channels*/
   color: #fff;
 }
 
 
 
-:root .mainContent-uDGa6R .arrow-2HswgU { /*collapse channel arrow*/
+:root .mainContent-uDGa6R .arrow-2HswgU {
+  /*collapse channel arrow*/
   display: none;
 }
-:root .spine-29OFwR { /*thread icon ?*/
+
+:root .spine-29OFwR {
+  /*thread icon ?*/
   z-index: 1;
 }
-:root .container-1-ERn5 { /*server menu (where server name is)*/
+
+:root .container-1-ERn5 {
+  /*server menu (where server name is)*/
   background: var(--background-secondary);
   z-index: 3;
 }
-:root .unreadTop-1DJtGv {/*ne message area (top)*/
+
+:root .unreadTop-1DJtGv {
+  /*ne message area (top)*/
   top: -9px;
   z-index: 2;
   width: 100%;
   padding: 0;
 }
-:root .unreadTop-1DJtGv .unreadBar-elBRZx.mention-3XBnnZ { /*new mention bar (top)*/
+
+:root .unreadTop-1DJtGv .unreadBar-elBRZx.mention-3XBnnZ {
+  /*new mention bar (top)*/
   border-radius: 0;
   background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
 }
-:root .unreadTop-1DJtGv .unreadBar-elBRZx.unread-2wipsx { /*new message bar (top)*/
+
+:root .unreadTop-1DJtGv .unreadBar-elBRZx.unread-2wipsx {
+  /*new message bar (top)*/
   border-radius: 0;
   background: linear-gradient(var(--unread-color), rgba(0, 0, 0, 0));
 }
-:root .unreadBottom-3Ojk6R {/*new message area (bottom)*/
+
+:root .unreadBottom-3Ojk6R {
+  /*new message area (bottom)*/
   width: 100%;
   height: 15px;
   padding: 0;
 }
-:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.mention-3XBnnZ { /*new mention bar (bottom)*/
+
+:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.mention-3XBnnZ {
+  /*new mention bar (bottom)*/
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
 }
-:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.unread-2wipsx {/*new message bar (bottom)*/
+
+:root .unreadBottom-3Ojk6R .unreadBar-elBRZx.unread-2wipsx {
+  /*new message bar (bottom)*/
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), var(--unread-color));
 }
-:root .unreadBar-elBRZx > .text-2GsXbW {
+
+:root .unreadBar-elBRZx>.text-2GsXbW {
   display: none;
 }
 
 
-:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S { /*mention/notification dot on the right of channel*/
+:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S {
+  /*mention/notification dot on the right of channel*/
   background-color: var(--mention-color) !important;
 }
-:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S::before { /*same thing or similar*/
+
+:root .mentionsBadge-3H1BKJ .numberBadge-37OJ3S::before {
+  /*same thing or similar*/
   content: "";
   position: absolute;
   width: 16px;
@@ -599,7 +816,9 @@
   animation: var(--disable-animations), 2s pulse infinite;
   will-change: transform;
 }
-:root .unread-36eUEm { /*notification dot on the left of channel*/
+
+:root .unread-36eUEm {
+  /*notification dot on the left of channel*/
   top: 54%;
   left: 5px;
   width: 6px;
@@ -608,7 +827,9 @@
   background-color: var(--unread-color);
   border-radius: 10px;
 }
-:root .unread-36eUEm::before { /*same thing as above (or similar)*/
+
+:root .unread-36eUEm::before {
+  /*same thing as above (or similar)*/
   content: "";
   position: absolute;
   width: 6px;
@@ -621,15 +842,20 @@
 }
 
 
-:root .activityPanel-9icbyU, /**/
-:root .container-1zzFcN { /*voice channel connection connected menu*/
+:root .activityPanel-9icbyU,
+/**/
+:root .container-1zzFcN {
+  /*voice channel connection connected menu*/
   border-bottom: none;
   background-color: aqua;
 }
-:root .voiceUserSummary-huJ8Md svg:not(.icon-3akWb2) { /*can't find it*/
+
+:root .voiceUserSummary-huJ8Md svg:not(.icon-3akWb2) {
+  /*can't find it*/
   padding-right: 10px;
   background-color: brown;
 }
+
 :root [mask="url(#svg-mask-voice-user-summary-item)"] {
   background-color: darkblue;
   mask: none;
@@ -637,19 +863,26 @@
 
 
 
-:root .tile-2TcwiO { /*element/people background in voice channel (when selcted*/
+:root .tile-2TcwiO {
+  /*element/people background in voice channel (when selcted*/
   background-color: var(--background-secondary-alt);
 }
-:root .tile-2TcwiO .button-3Vyz67, /*can't find this*/
+
+:root .tile-2TcwiO .button-3Vyz67,
+/*can't find this*/
 :root .tile-2TcwiO .buttonColor-28DXIe {
   background-color: var(--brand-experiment);
   background-color: #00FF00;
 }
-:root .container-1ILvLB .header-2C89wJ { /*should have to do with voice chat info, but I can't find it*/
+
+:root .container-1ILvLB .header-2C89wJ {
+  /*should have to do with voice chat info, but I can't find it*/
   background-color: var(--background-tertiary);
   background-color: blue;
 }
-:root .container-1ILvLB section { /*voice chat detailed info (click on "voice connected" text*/
+
+:root .container-1ILvLB section {
+  /*voice chat detailed info (click on "voice connected" text*/
   background-color: var(--background-secondary);
 }
 
@@ -662,11 +895,14 @@
 
 
 
-:root .inviteRow-3vmB7i { /*invite people to a server*/
+:root .inviteRow-3vmB7i {
+  /*invite people to a server*/
   border-radius: 0;
   padding-left: 15px;
 }
-:root .inviteRow-3vmB7i:hover { /*same as above, but on hover*/
+
+:root .inviteRow-3vmB7i:hover {
+  /*same as above, but on hover*/
   background-color: var(--background-modifier-hover);
 }
 
@@ -674,73 +910,111 @@
 
 
 
-:root .container-ZMc96U.themed-Hp1KC_ { /*top of chat window, title + icon on the rights*/
+:root .container-ZMc96U.themed-Hp1KC_ {
+  /*top of chat window, title + icon on the rights*/
   background: var(--background-secondary);
 }
-:root .container-ZMc96U.themed-Hp1KC_ .children-3xh0VB::after { /*icons on top of chat window*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .children-3xh0VB::after {
+  /*icons on top of chat window*/
   background: linear-gradient(90deg, rgba(54, 57, 63, 0) 0, var(--background-secondary));
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY { /*search button on top right of chat window*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY {
+  /*search button on top right of chat window*/
   order: 1;
   margin-left: 4px;
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ { /*inside of search button container*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+  /*inside of search button container*/
   width: 27px;
   transition: 250ms;
   background-color: transparent;
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj { /*search button icon container probably*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj {
+  /*search button icon container probably*/
   transform: scale(1.3);
   transition: 250ms;
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj .icon-18rqoe { /*also search button icon*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ .iconContainer-1RqWJj .icon-18rqoe {
+  /*also search button icon*/
   color: var(--interactive-normal);
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ { /*hovered/expanded search bar*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+  /*hovered/expanded search bar*/
   width: 220px;
   background-color: var(--background-tertiary);
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ .iconContainer-1RqWJj { /*search icon on hover ?*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ .iconContainer-1RqWJj {
+  /*search icon on hover ?*/
   transform: scale(1);
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ .iconContainer-1RqWJj .icon-18rqoe { /*same ?*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ .iconContainer-1RqWJj .icon-18rqoe {
+  /*same ?*/
   color: var(--text-muted);
 }
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .searchAnswer-23w-CH, /**/
-:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .searchFilter-2UfsDk { /*filter in search*/
+
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .searchAnswer-23w-CH,
+/**/
+:root .container-ZMc96U.themed-Hp1KC_ .search-39IXmY .searchFilter-2UfsDk {
+  /*filter in search*/
   background-color: var(--background-primary);
 }
-:root .toolbar-3_r2xA > a[href="https://support.discord.com"], /*disabled IDC*/
+
+:root .toolbar-3_r2xA>a[href="https://support.discord.com"],
+/*disabled IDC*/
 :root .searchLearnMore-1gNL3A {
   display: none;
 }
-:root .container-2McqkF { /*search menu when clicked*/
+
+:root .container-2McqkF {
+  /*search menu when clicked*/
   background-color: var(--background-secondary-alt);
   box-shadow: none;
 }
+
 :root .container-2McqkF .resultsGroup-1BPR25 .header-3A13BX {
   text-align: center;
   background-color: blue;
 }
-:root .container-2McqkF .queryContainer-ZunrLZ { /*useless IMO ? tells to press enter when searching*/
-  display:none;
+
+:root .container-2McqkF .queryContainer-ZunrLZ {
+  /*useless IMO ? tells to press enter when searching*/
+  display: none;
   background-color: var(--background-tertiary);
 }
-:root .container-2McqkF .option-ayUoaq { /*background of elemnts in searc menu*/
+
+:root .container-2McqkF .option-ayUoaq {
+  /*background of elemnts in searc menu*/
   margin: 0;
   border-radius: 0;
 }
-:root .container-2McqkF .option-ayUoaq::after { /*as above, but right side*/
+
+:root .container-2McqkF .option-ayUoaq::after {
+  /*as above, but right side*/
   background: linear-gradient(90deg, rgba(54, 57, 63, 0), var(--background-secondary-alt) 80%);
 }
-:root .container-2McqkF .option-ayUoaq.selected-rZcOL- { /*not sure what this does*/
+
+:root .container-2McqkF .option-ayUoaq.selected-rZcOL- {
+  /*not sure what this does*/
   background: linear-gradient(90deg, rgba(54, 57, 63, 0), var(--background-secondary) 80%);
   background-color: #00FF00;
 }
-:root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker { /*calendar background during search*/
+
+:root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker {
+  /*calendar background during search*/
   background-color: var(--background-secondary-alt);
 }
-:root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker__day, :root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker__header { /*calendar during search (not background this time)*/
+
+:root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker__day,
+:root .container-2McqkF .calendarPicker-sDhzdi .react-datepicker__header {
+  /*calendar during search (not background this time)*/
   background: var(--background-secondary-alt) !important;
   border-color: var(--background-tertiary);
 }
@@ -748,6 +1022,626 @@
 
 
 
+
+
+
+
+:root .bannerSVGWrapper-qc0szY mask {
+  /*display: none;*/
+  background-color: #00FF00;
+}
+
+:root .userPopoutOuter-3AVBmJ {
+  /*profile card when clicking a profile*/
+  max-height: unset !important;
+
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY {
+  /*seems to be relatively the same thing*/
+  max-height: unset !important;
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY {
+  /*profile card top background*/
+  overflow: visible;
+  min-height: 120px !important;
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY foreignObject {
+  /*not sure what this is*/
+  mask: unset;
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY .banner-2boKnS {
+  /*profile card top background too*/
+  height: 120px;
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY .pencilContainer-11Kuga {
+  /*edit profile button HIDDEN HAHA LMAO LOSER*/
+  display: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY[viewBox="0 0 340 60"] foreignObject {
+  /*this moves the background color*/
+  transform: translateY(-30px);
+}
+
+:root .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY[viewBox="0 0 340 90"] foreignObject {
+  /*this moves the background color*/
+  transform: translateY(-15px);
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 {
+  /*avatar of selected user*/
+  top: 20px;
+  left: 16px;
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 circle {
+  /*this should hide the circle around selected user avatar, but doesn't seem to show up when you remove display none*/
+  display: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 .avatarHint-2g3Mcd {
+  /*hover avatar effect*/
+  border-radius: 50px;
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 .avatarHint-2g3Mcd foreignObject {
+  /*hover avatar effect*/
+  /*mask: none;*/
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 .avatarDecorationHint-GIo7Yh {
+  /**/
+  width: 80px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px !important;
+  background-color: #00FF00;
+}
+
+:root .userPopoutOuter-3AVBmJ .avatarWrapper-3y0KZ1 .avatarDecorationHint-GIo7Yh foreignObject {
+  /**/
+  mask: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda {
+  /*user profile card content background*/
+  position: static;
+  overflow: visible;
+  margin: 16px;
+  max-height: calc(100vh - 200px);
+  background-color: #203355;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>.copiableNameTag-1BpMX8,
+/**/
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>div>.userText-148fun>.nickname-2rimyL,
+/*server username*/
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>div>.userText-148fun>.userTagNoNickname-2MJ9HD {
+  /*username with #*/
+  position: absolute;
+  top: 30px;
+  left: 115px;
+  z-index: 1;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background-color: aquamarine;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>.copiableNameTag-1BpMX8>span,
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>div>.userText-148fun>.nickname-2rimyL>span,
+/*not sure what that is*/
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .usernameSection-2d814A>div>.userText-148fun>.userTagNoNickname-2MJ9HD>span {
+  word-break: unset;
+  white-space: unset;
+  background-color: blue;
+}
+
+:root .userPopoutOuter-3AVBmJ .profileBadges-31rDHI:empty+.userPopoutOverlayBackground-dKOOda .nickname-2rimyL {
+  /*seems to be background of username and badges, but only for custom server names ? */
+  top: 20px;
+  background-color: #00FF00;
+}
+
+:root .userPopoutOuter-3AVBmJ .profileBadges-31rDHI {
+  /*badges*/
+  position: absolute;
+  top: 60px;
+  left: 110px;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/*:root .userPopoutOuter-3AVBmJ .userPopoutInner-1hXSeY::before { /* my attempt at changing background of user profile card but doesn'twork (works too well)*/
+/*
+  background-color: #162441;
+}*/
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .scroller-1jBQYo {
+  /*inside of user profile card*/
+  padding-right: 12px !important;
+  background-color: #2a4374;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .section-3FmfOT {
+  /*a little more inside the user profile card*/
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .userTagWithNickname-3-znkC {
+  /*actual username for users who have server nickname*/
+  padding-top: 12px;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .divider-1tWBgZ {
+  /*useless divider so ratio*/
+  display: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .scrollerSeparator-3MxsAq {
+  /*not sure what this is but shouldn't be an issue*/
+  background-color: #00FF00;
+  box-shadow: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .divider-1wtgZ3 {
+  /*ratioing dividers since 1998*/
+  display: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y {
+  /*user profile card activity*/
+  padding: 16px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .text-31kWmP,
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .textRow-1sENuL,
+/*activity text color*/
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .anchor-1X4H4q,
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .activityName-3YXl6e {
+  color: white;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .buttonColor-XIRMbp {
+  /* spotify button text + icons ("play on spotify")*/
+  border: none;
+  background-color: var(--listening-test);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1294117647);
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .headerTextNormal-Z8we9g::before {
+  /*the wave thing*/
+  content: "";
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: 284px;
+  top: -25px;
+  left: 0;
+  background: var(--background-secondary);
+  background: var(--profile-gradient-primary-color);
+  background-color: rgba(239, 162, 170, 0.7);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="284" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+  animation: animate2 8s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-mask-position-x: 284px;
+  }
+
+  100% {
+    -webkit-mask-position-x: 0;
+  }
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y::before {
+  /*no clue tbh*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  background: #00FF00;
+  background: var(--playing);
+  border-radius: 0 0 10px 10px;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y::after {
+  /*this should also be the wave, but it seems to be the thing above ?*/
+  content: "";
+  position: absolute;
+  height: 25px;
+  z-index: 2;
+  width: 284px;
+  top: -24px;
+  left: 0;
+  background: #77ca3f;
+  background: var(--playing);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="284" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+  animation: animate 6s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .timeBarUserPopoutV2-32DL06::before {
+  /*activity background user card*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background: #1db954;
+  background: var(--listening);
+  border-radius: 0 0 10px 10px;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .timeBarUserPopoutV2-32DL06::after {
+  /*another wave ! cool stuff ahead (actually no i can't figure it out*/
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 284px;
+  top: -24px;
+  left: 0;
+  z-index: 3;
+  background: #1db653;
+  background: var(--listening);
+  background-color: rgba(239, 162, 170, 0.473);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="284" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+  animation: animate 6s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0% {
+    -webkit-mask-position-x: 99;
+  }
+
+  100% {
+    -webkit-mask-position-x: 284px;
+  }
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .timeBarUserPopoutV2-32DL06 .barInner-3dHef4 {
+  /*music progress bar*/
+  background-color: white;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .activity-E0U09Y .platformIcon-k3yytQ {
+  /*spotify icon, extra cringe*/
+  display: none;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .role-2TIOKu {
+  /*role boxes*/
+  position: relative;
+  overflow: hidden;
+  border: none;
+  z-index: 1;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .role-2TIOKu .roleRemoveButton-17oXnT {
+  /*should be role remove button, seems bugged ?*/
+  position: static;
+  background-color: #00FF00;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .role-2TIOKu .roleRemoveButton-17oXnT .roleCircle-3TFUOr {
+  /*circle around role remove button, bugged when testing*/
+  width: var(--role-circle) !important;
+  height: var(--role-circle) !important;
+  background-color: #00FF00;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .role-2TIOKu .roleRemoveButton-17oXnT .roleCircle-3TFUOr::before {
+  /*role background*/
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+:root .userPopoutOuter-3AVBmJ .userPopoutOverlayBackground-dKOOda .role-2TIOKu .roleRemoveButton-17oXnT .roleRemoveIcon-387wKV {
+  /*role remove icon background*/
+  position: absolute;
+  top: calc(50% + var(--role-circle) / 2);
+  left: 13px;
+  width: var(--role-circle) !important;
+  height: var(--role-circle) !important;
+}
+
+
+
+#app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before {
+  /*channel bar icon*/
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: rgb(var(--accent));
+  box-shadow: 0 0 calc(var(--channel-glow-intensity) * 15px) calc(var(--channel-glow-intensity) * 5px) rgb(var(--accent), 0.2);
+}
+
+
+
+
+
+
+:root .container-2kTWmC {
+  /*role assign box*/
+  position: relative;
+  z-index: 1005;
+  border: none;
+  padding: 0;
+}
+
+:root .container-2kTWmC .container-2oNtJn {
+  /*role assign search bar*/
+  border-radius: 5px 5px 0 0;
+}
+
+:root .container-2kTWmC .container-2oNtJn .iconLayout-3Bjizv {
+  /*hdies search icon from role assign*/
+  display: none;
+}
+
+:root .container-2kTWmC .list-1B0XtU {
+  /*role elemnts, whole*/
+  margin: 0;
+  padding: 0;
+}
+
+:root .container-2kTWmC .list-1B0XtU .item-1Mjtru {
+  /*inside of role assign elements*/
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+:root .container-2kTWmC .list-1B0XtU .item-1Mjtru .popoutRoleCircle-3TfOkj {
+  /*circle before role text but it's hidden anyway*/
+  width: 0;
+  border: none;
+  margin: 0;
+}
+
+:root .container-2kTWmC .list-1B0XtU .item-1Mjtru .popoutRoleCircle-3TfOkj::before {
+  /*something aruond each role ?*/
+  position: absolute;
+  border-radius: 5px;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root .userProfileModalOuter-1FYL8T {
+  /*size of expanded profile*/
+  width: 700px;
+}
+
+:root .userProfileModalOuter-1FYL8T .userProfileModalInner-3fh3QA {
+  /*also seems to be the expanded profile*/
+  overflow: hidden;
+}
+
+:root .userProfileModalOuter-1FYL8T .userProfileModalInner-3fh3QA::before {
+  /*same thing ?*/
+  border-radius: 12px;
+
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv {
+  /*top part*/
+  margin-bottom: 0;
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY {
+  /*top part background*/
+  min-height: 160px !important;
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY[viewBox="0 0 600 106"] foreignObject {
+  /*moves the color thing up cause it's broken otherwise*/
+  transform: translateY(-22px);
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY .banner-2boKnS {
+  /*more or less the same*/
+  height: 160px;
+  border-radius: 0;
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .avatar-1YsFQ1 {
+  /*moves avatar*/
+  top: -143px;
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .headerTop-212g15 {
+  /*top part elements (badges, message button, etc.*/
+  flex-direction: column;
+  top: -100px;
+  left: 155px;
+}
+
+:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .headerTop-212g15 .badgeList-2pMvZX {
+  /*badges*/
+  padding: 0 0 10px 0;
+  background-color: transparent;
+}
+
+:root .userProfileModalOuter-1FYL8T .userProfileModalOverlayBackground-8p3-eU {
+  /*inner card of expanded profile menu*/
+  overflow: visible;
+}
+
+:root .userProfileModalOuter-1FYL8T .userProfileModalOverlayBackground-8p3-eU .nameTag-2ysfG3 {
+  /*username*/
+  position: absolute;
+  top: -150px;
+  left: 140px;
+  z-index: 1;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+:root .userProfileModalOuter-1FYL8T .mask-1y0tyc rect[fill=black],
+/*this hides stuff, not sure what it is since it's hidden anyway*/
+:root .userProfileModalOuter-1FYL8T .mask-1y0tyc circle[fill=black] {
+  display: none;
+}
+
+:root .userProfileModalOuter-1FYL8T .mask-1y0tyc .cursorDefault--wfhy5 rect,
+/*same thing, i guess ?*/
+:root .userProfileModalOuter-1FYL8T .mask-1y0tyc .pointerEvents-2KjWnj {
+  rx: calc(1px + var(--status-radius)) !important;
+  ry: calc(1px + var(--status-radius));
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee {
+  /*activity tab*/
+  padding: 16px;
+  margin: 12px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .headerText-3g1XK9,
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .activityName-3YXl6e,
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .content-tXPNDw,
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .details-2-ciHo,
+/*some text in activity*/
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .name-1-Q7l2,
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .nameNormal-2fPMD2,
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .nameWrap-3TyM52 {
+  color: white;
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .button-TGAkj4 {
+  /*spotify play and listen buttons*/
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1294117647);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1294117647);
+  color: #fff;
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .contentImagesProfile-27BIzt::after,
+/*can't find*/
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .contentGameImageProfile-24ty00::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  background: #7289da;
+  background-color: aqua;
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .timeBarProfileV2-14KewZ::after {
+  /*spotify card on activity tab of expanded profile*/
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background: #1db954;
+}
+
+:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .platformIcon-k3yytQ {
+  /*it's hidden whatever*/
+  display: none !important;
+}
+
+:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT {
+  /*connected accounts on user info tab*/
+  border: solid #000000;
+  border-width: 1.2px 1.2px 3px 1.2px;
+  border-radius: 4px;
+  width: 296px;
+  transition: 100ms;
+}
+
+:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT:active {
+  /*on click for above*/
+  border-width: 1.2px 1.2px 1.2px 1.2px;
+  transform: translateY(1px);
+}
+
+:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountIcon-2szOw- {
+  /*icon of connected accounts*/
+  padding: 5px;
+  border-radius: 4px;
+}
+
+:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountNameContainer-3v4pIj {
+  /*name of connected accounts*/
+  margin-left: 13px;
+}
+
+:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountChildren-2jEgw3 {
+  /*has to do with connected accountsb ut idk what it is*/
+  margin-left: 56px;
+}
+
+:root .userProfileModalOuter-1FYL8T .listRow-Y5zoF8 {
+  /*mutual friends/server*/
+  margin: 0;
+  padding: 8px 12px;
+}
+
+:root .userProfileModalOuter-1FYL8T .pencilContainer-11Kuga {
+  /*hidden anyway*/
+  display: none;
+}
 
 
 
@@ -774,183 +1668,13 @@
 
 
 
-:root .container-2kTWmC {
-  position: relative;
-  z-index: 1005;
-  border: none;
-  padding: 0;
-  background-color: #191f2e;
-}
-
-#app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 2px;
-  background: rgb(var(--accent));
-  box-shadow: 0 0 calc(var(--channel-glow-intensity) * 15px) calc(var(--channel-glow-intensity) * 5px) rgb(var(--accent), 0.2);
-}
 
 
-:root .container-2kTWmC .container-2oNtJn {
-  border-radius: 5px 5px 0 0;
-}
-:root .container-2kTWmC .list-1B0XtU {
-  margin: 0;
-  padding: 0;
-}
-:root .container-2kTWmC .list-1B0XtU .item-1Mjtru {
-  margin: 5px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
-}
-:root .container-2kTWmC .list-1B0XtU .item-1Mjtru .popoutRoleCircle-3TfOkj {
-  width: 0;
-  border: none;
-  margin: 0;
-}
-:root .container-2kTWmC .list-1B0XtU .item-1Mjtru .popoutRoleCircle-3TfOkj::before {
-  position: absolute;
-  border-radius: 5px;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  opacity: 0.2;
-  z-index: -1;
-}
-:root .userProfileModalOuter-1FYL8T {
-  width: 700px;
-}
-:root .userProfileModalOuter-1FYL8T .userProfileModalInner-3fh3QA {
-  overflow: hidden;
-}
-:root .userProfileModalOuter-1FYL8T .userProfileModalInner-3fh3QA::before {
-  border-radius: 8px;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv {
-  margin-bottom: 0;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY {
-  min-height: 160px !important;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY[viewBox="0 0 600 106"] foreignObject {
-  transform: translateY(-22px);
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .bannerSVGWrapper-qc0szY .banner-2boKnS {
-  height: 160px;
-  border-radius: 0;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .avatar-1YsFQ1 {
-  top: -143px;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .headerTop-212g15 {
-  flex-direction: column;
-  top: -100px;
-  left: 155px;
-}
-:root .userProfileModalOuter-1FYL8T .topSection-1Khgkv .headerTop-212g15 .badgeList-2pMvZX {
-  padding: 0 0 10px 0;
-  background-color: transparent;
-}
-:root .userProfileModalOuter-1FYL8T .userProfileModalOverlayBackground-8p3-eU {
-  overflow: visible;
-}
-:root .userProfileModalOuter-1FYL8T .userProfileModalOverlayBackground-8p3-eU .nameTag-2ysfG3 {
-  position: absolute;
-  top: -150px;
-  left: 140px;
-  z-index: 1;
-  font-size: 23px;
-  font-weight: 600;
-}
-:root .userProfileModalOuter-1FYL8T .mask-1y0tyc rect[fill=black],
-:root .userProfileModalOuter-1FYL8T .mask-1y0tyc circle[fill=black] {
-  display: none;
-}
-:root .userProfileModalOuter-1FYL8T .mask-1y0tyc .cursorDefault--wfhy5 rect,
-:root .userProfileModalOuter-1FYL8T .mask-1y0tyc .pointerEvents-2KjWnj {
-  rx: calc(1px + var(--status-radius)) !important;
-  ry: calc(1px + var(--status-radius));
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee {
-  padding: 16px;
-  margin: 12px;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 1;
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .headerText-3g1XK9,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .activityName-3YXl6e,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .content-tXPNDw,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .details-2-ciHo,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .name-1-Q7l2,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .nameNormal-2fPMD2,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .nameWrap-3TyM52 {
-  color: white;
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .button-TGAkj4 {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.1294117647);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1294117647);
-  color: #fff;
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .contentImagesProfile-27BIzt::after,
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .contentGameImageProfile-24ty00::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  left: 0;
-  top: 0;
-  background: #7289da;
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .timeBarProfileV2-14KewZ::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  background: #1db954;
-}
-:root .userProfileModalOuter-1FYL8T .activityProfileV2-1N7pee .platformIcon-k3yytQ {
-  display: none !important;
-}
-:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT {
-  border: solid #000000;
-  border-width: 1.2px 1.2px 3px 1.2px;
-  border-radius: 4px;
-  width: 296px;
-  transition: 100ms;
-}
-:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT:active {
-  border-width: 1.2px 1.2px 1.2px 1.2px;
-  transform: translateY(1px);
-}
-:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountIcon-2szOw- {
-  padding: 5px;
-  border-radius: 4px;
-}
-:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountNameContainer-3v4pIj {
-  margin-left: 13px;
-}
-:root .userProfileModalOuter-1FYL8T .connectedAccountContainer-2TWiXT .connectedAccountChildren-2jEgw3 {
-  margin-left: 56px;
-}
-:root .userProfileModalOuter-1FYL8T .listRow-Y5zoF8 {
-  margin: 0;
-  padding: 8px 12px;
-}
-:root .userProfileModalOuter-1FYL8T .pencilContainer-11Kuga {
-  display: none;
-}
+
+
+
+
+
 :root .accountBtnInner-1DCgBm[aria-label="Battle.net"],
 :root .accountButtonInner-33vCDY[aria-label="Battle.net"],
 :root .accountButtonInner-33vCDY[aria-label="Battle.net"]:hover,
