@@ -54,7 +54,7 @@ rose : EFA2AA
 
 
 :root {
-  --background-image: url('https://i.imgur.com/Nglfni6.png');
+  --background-image: url('https://helunix.github.io/SRBD/images/logo2.3.png');
   --background-blur: 0px; /* Blur intensity of --background-image */
   --opacity: 0.85; /* Opacity of overall app. | Default: .85 */
   --accent: 0, 231, 169; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
@@ -139,7 +139,7 @@ rose : EFA2AA
 
 
 .bg-1QIAus {
-  background-image: url('https://helunix.github.io/SRBD/logo2.3.png');
+  background-image: url('https://helunix.github.io/SRBD/images/logo2.3.png');
   background-color: transparent;
   background-attachment: var(--background-attachment, fixed);
   background-size: var(--background-size, cover);
