@@ -1647,34 +1647,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*all this seems to be with account connection menu within settings*/
 :root .accountBtnInner-1DCgBm[aria-label="Battle.net"],
 :root .accountButtonInner-33vCDY[aria-label="Battle.net"],
 :root .accountButtonInner-33vCDY[aria-label="Battle.net"]:hover,
@@ -1686,6 +1659,7 @@
 :root .accountButtonInner-33vCDY[aria-label=Twitch]:hover,
 :root .connectedAccountIcon-2szOw-[aria-label=Twitch] {
   background-color: rgba(96, 27, 216, 0.3215686275);
+  background-color: #00FF00;
 }
 :root .accountBtnInner-1DCgBm[aria-label=YouTube],
 :root .accountButtonInner-33vCDY[aria-label=YouTube],
@@ -1784,37 +1758,44 @@
   background-color: rgba(0, 81, 174, 0.3254901961);
 }
 
+
+
+
+
+
+
+/*seems to be the whole settings panel*/
 :root .contentRegion-3HkfJJ {
   flex: 1 1 100%;
 }
-:root .contentColumn-1C7as6,
-:root .customColumn-2n-oKU,
+:root .contentColumn-1C7as6, /*content of settings panel ?*/
+:root .customColumn-2n-oKU, /*can't find these, probably a setting menu*/
 :root .sidebarScrollable-2mW9Ls + .content-2ssVKB,
 :root .customScroller-m1-jZn > div {
   max-width: 95%;
 }
-:root .sidebar-nqHbhN {
+:root .sidebar-nqHbhN { /*left side of settings*/
   padding: 60px 0 35px 65px;
   width: 285px;
 }
-:root .sidebar-nqHbhN > div > .item-2GWPIy,
-:root #bd-settings-sidebar .ui-tab-bar-item {
+:root .sidebar-nqHbhN > div > .item-2GWPIy, /*each element of left side of settings*/
+:root #bd-settings-sidebar .ui-tab-bar-item { /*dunno about this one*/
   padding: 8px 0 8px 10px;
   border-radius: 5px 0 0 5px;
 }
-:root .closeButton-PCZcma {
+:root .closeButton-PCZcma { /*close settings button*/
   border-radius: 5px;
 }
-:root .keybind-13vtq8 {
+:root .keybind-13vtq8 { /*esc prompt to quit menu*/
   display: none;
 }
-:root .accountProfileCard-lbN7n- {
+:root .accountProfileCard-lbN7n- { /*self-explanatory, account card in settings*/
   background-color: var(--background-secondary);
 }
-:root .accountProfileCard-lbN7n- .userInfo-regn9W {
+:root .accountProfileCard-lbN7n- .userInfo-regn9W { /*username, badge, etdit user profile button*/
   position: relative;
 }
-:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ {
+:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ { /*avatar*/
   top: -14px;
   border-color: transparent;
   border-width: 9px 0;
@@ -1828,7 +1809,7 @@
 :root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ .imageUploaderIcon-2OHmFu {
   display: none;
 }
-:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ .pointerEvents-2KjWnj {
+:root .accountProfileCard-lbN7n- .userInfo-regn9W .avatar-3mTjvZ .pointerEvents-2KjWnj { /*can't find this*/
   x: 66px;
   y: 66px;
   width: 20px;
@@ -1837,10 +1818,10 @@
   stroke: var(--background-secondary);
   stroke-width: 4px;
 }
-:root .accountProfileCard-lbN7n- .background-3d_SjE {
+:root .accountProfileCard-lbN7n- .background-3d_SjE { /*bottom part of user card*/
   margin-right: 0;
 }
-:root .previewProfileThemes-ViDDkq .bannerSVGWrapper-qc0szY {
+:root .previewProfileThemes-ViDDkq .bannerSVGWrapper-qc0szY { /*i think this is some nitro feature i can't access*/
   overflow: visible;
   min-height: 120px !important;
 }
@@ -1941,23 +1922,278 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1294117647);
   color: #fff;
 }
+
+
+:root .content-1SgpWY > :nth-child(2):not(.chat-2ZfjoI), /* 2nd child, but not of main window : DM friends tab + public servers */
+:root .callContainer-BGIngG,
+:root .gatedContent-31-gID, /* NSFW warning page */
+:root .chat-2ZfjoI > .content-1jQy2l > .pageContainer-36uo3F, /* seems to be a chat page ? dunno which one*/
+:root .content-1jQy2l > .container-3wLKDe, /*forums ? icon is two chat bubbles*/
+:root .container-2IKOsH {
+  z-index: 2;
+  background-color: lightcoral;
+}
+
+:root .lookFilled-yCfaCM.colorPrimary-2AuQVo,
+:root .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+  /*background-color: var(--brand-experiment);*/ 
+  background-color: aquamarine;
+}
+
+/* spambanner */
+:root .spamBanner-1auiob { /* probably related to spam */
+  position: relative;
+  flex-direction: column;
+  left: 56px;
+  bottom: 8px;
+  width: 330px;
+  height: fit-content;
+  row-gap: 30px;
+  background-color: yellow;
+}
+:root .spamBanner-1auiob .bannerTextContainer-TbC9W4 { /* /spoiler command < FALSE WHAT IS IT*/
+  min-width: 0;
+  background-color: blueviolet;
+}
+:root .spamBanner-1auiob .actionButtons-2SAg-Q { /* dunno */
+  justify-content: space-around;
+  background-color: brown;
+}
+
+
+
+
+
+
+/*not message reaction ?*/ 
+:root .reaction-2A2y9y {
+  border: none;
+  border-radius: 5px;
+  /*background-color: var(--background-modifier-active);*/
+  background-color: aqua;
+}
+:root .reaction-2A2y9y.reactionMe-3I9gFK {
+  position: relative;
+  background-color: aqua;
+}
+:root .reaction-2A2y9y.reactionMe-3I9gFK::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  /*background-color: var(--brand-experiment);*/
+  border-radius: inherit;
+}
+
+
+:root .selected-3H3-RC { /**/
+  /*background: var(--background-primary);*/
+  background:yellow;
+  background-color:yellow;
+}
+
+
+
+
+
+
+
+
+:root .tile-2mmK5T {
+  /*background-color: var(--background-secondary);*/
+  background-color: aquamarine;
+}
+:root .tileHorizontal-1DBMDZ.tile-2mmK5T:hover {
+  /*background-color: var(--background-secondary-alt);*/
+  background-color: aquamarine;
+}
+:root .invalidPoop--w1123 {
+  /*background-color: rgba(0, 0, 0, 0.103);*/
+  background-color: aquamarine;
+}
+:root .spoilerText-27bIiA.hidden-3B-Rum,
+:root .spoilerText-27bIiA.hidden-3B-Rum:hover {
+  /*background-color: var(--background-secondary-alt);*/
+  background-color: aquamarine;
+}
+
+
+
+:root .css-bcsufo-menu {
+  /*background: var(--background-secondary-alt);*/
+  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
+  
+}
+:root .css-1a1o7fb-control,
+:root .css-2dw5y-control,
+:root .css-p0ralp-control {
+  /*background: var(--background-secondary);*/
+  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
+}
+
+
+:root .itemInner-3k3Sn6 {
+  padding: 8px;
+  margin-left: 0;
+  background-color: aquamarine;
+}
+:root .header-224ffR {
+  margin: -32px -32px 0 -32px;
+  background-color: aquamarine;
+  border-radius: 0;
+}
+:root .header-224ffR .headerImage-Xy5R7m {
+  border-radius: 0;
+  -webkit-mask: linear-gradient(black, transparent);
+}
+
+
+
+
+:root .theme-light .root-1CAIjD, /*create server menu*/
+:root .theme-light .footer-IubaaS { /*bottom of create server menu*/
+  box-shadow: none;
+}
+:root .theme-light .lookFilled-yCfaCM.colorGrey-2iAG-B {
+  /*background-color: var(--brand-experiment);*/
+  background-color: teal;
+}
+:root .theme-light .contents-3ca1mk {
+  /*color: #fff;*/
+  color: yellow;
+  background-color: red;
+}
+:root .theme-light .templatesList-uohY49, /*seems to be inner create server menu*/
+:root .theme-light .optionsList-dmHy1l {
+  padding: 0 !important;
+  border-radius: 0;
+  background-color: pink;
+}
+:root .theme-light .templatesList-uohY49 .container-x8Y1ix, /*each element in create server menu*/
+:root .theme-light .optionsList-dmHy1l .container-x8Y1ix {
+  border: none;
+  border-radius: 0;
+  background-color: green;
+}
+:root .theme-light .templatesList-uohY49 .optionHeader-27AHfD, /*separation bar in create server menu*/
+:root .theme-light .optionsList-dmHy1l .optionHeader-27AHfD {
+  text-align: center;
+  margin: 12px 0;
+  background-color: blueviolet;
+}
+:root .theme-light .createGuild-2m1V10 { /*last step of create server menu*/
+  padding: 10px !important;
+  background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+:root .group-LWHoGI {
+  width: 110px;
+  border: none;
+  gap: 5px;
+  background-color: #00FF00;
+}
+:root .group-LWHoGI .item-4m-12I {
+  border-radius: 8px;
+  background-color: #00FF00;
+}
+:root .group-LWHoGI .item-4m-12I:hover.deny-1GO6vI, :root .group-LWHoGI .item-4m-12I.selected-3jieYB.deny-1GO6vI {
+  color: #ed4245;
+  background-color: rgba(237, 66, 69, 0.1843137255);
+  background-color: #00FF00;
+}
+:root .group-LWHoGI .item-4m-12I:hover.passthrough--fbdFR, :root .group-LWHoGI .item-4m-12I.selected-3jieYB.passthrough--fbdFR {
+  color: #dcddde;
+  background-color: rgba(100, 100, 100, 0.2274509804);
+  background-color: #00FF00;
+}
+:root .group-LWHoGI .item-4m-12I:hover.allow-1h61-Z, :root .group-LWHoGI .item-4m-12I.selected-3jieYB.allow-1h61-Z {
+  color: #43b581;
+  background-color: rgba(67, 181, 130, 0.231372549);
+  background-color: #00FF00;
+}
+
+
+
+
+:root .autocompleteShadow-2nfsSy {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1921568627);
+  background-color: #00FF00;
+}
+:root .autocompleteShadow-2nfsSy + .autocompleteArrow-jJE9TQ, :root .autocompleteShadow-2nfsSy ~ .header-3i_Csh {
+  background: var(--background-secondary-alt);
+  background-color: #00FF00;
+}
+:root .autocompleteShadow-2nfsSy ~ .sectionTag-28mLyE {
+  background: var(--background-secondary);
+  background-color: #00FF00;
+}
+:root .autocompleteShadow-2nfsSy ~ .sectionTag-28mLyE .row-1Ib2uD {
+  padding: 0;
+  background-color: #00FF00;
+}
+:root .autocompleteShadow-2nfsSy ~ .header-3i_Csh .headerText-27z-EV {
+  margin-left: 15px;
+  background-color: #00FF00;
+}
+
+
+:root .perksModal-CLcR1c {
+  background: var(--background-primary);
+  background-color: #00FF00;
+  
+}
+:root .perksModal-CLcR1c .tierMarkerBackground-G8FoN4,
+:root .perksModal-CLcR1c .tierHeaderLocked-3ItHYn,
+:root .perksModal-CLcR1c .barBackground-unEPDT,
+:root .perksModal-CLcR1c .icon-2TbMdT {
+  background: var(--background-secondary-alt);
+  background-color: #00FF00;
+}
+:root .perksModal-CLcR1c .option-2KkUJO.selected-rZcOL-,
+:root .perksModal-CLcR1c .tierBody-3ju-rc,
+:root .perksModal-CLcR1c .perk-19D_HN,
+:root .perksModal-CLcR1c .tierMarkerInProgress-2Tdxjz {
+  /*background: var(--background-secondary) !important;*/
+  background-color: #00FF00 !important ;
+}
+
+
+
+
+
+
+
 :root .cardPrimaryOutline-1ofwVz {
   background-color: var(--background-secondary);
+  background-color: #00FF00;
 }
-:root .tabBarItemContainer-2HdIlr,
+:root .tabBarItemContainer-2HdIlr, /*gift inventory and log out button*/
 :root .landingPageTabLink-1dhCqV {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-:root .tabBarItemContainer-2HdIlr .textBadge-1fdDPJ.baseShapeRound-3epLEv,
+:root .tabBarItemContainer-2HdIlr .textBadge-1fdDPJ.baseShapeRound-3epLEv, /*beta buttton on the payment menu*/
 :root .landingPageTabLink-1dhCqV .textBadge-1fdDPJ.baseShapeRound-3epLEv {
   margin-right: 7px;
 }
-:root .connectionIcon-1iZ6F_ {
+:root .connectionIcon-1iZ6F_ { /*each element in connection menu*/
   border-radius: 5px;
   padding: 4px;
 }
-:root .premiumLabel-3HPvdB {
+:root .premiumLabel-3HPvdB { /*nitro tab*/
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
@@ -1968,82 +2204,103 @@
   border-radius: 5px 0 0 5px;
 }
 :root .hero-1aNo0v {
+  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
   max-width: unset;
 }
 :root .featuresHeader-2bjq5B {
+  background-image: url('https://helunix.github.io/SRBD/images/analyze-the-rock.gif');
   text-align: center;
 }
-:root .gemIndicatorContainer-PqApbX {
+:root .gemIndicatorContainer-PqApbX { /*boost gem icon*/
   background-color: var(--background-tertiary);
 }
 :root .paymentRow-1HKOLu,
 :root .pageActions-1crTQL,
-:root .codeRedemptionRedirect-2hYMSQ {
+:root .codeRedemptionRedirect-2hYMSQ { /*redirection to code redemption in Billing (Chilling) menu*/
   background: var(--background-secondary-alt);
+  background-color: #00FF00;
+  background: #00FF00;
 }
 :root .payment-2bOh4k:hover {
   background-color: var(--background-secondary);
+  background-color: #00FF00;
 }
 :root .expandedInfo-1W31i3 {
   background: var(--background-secondary);
+  background-color: #00FF00;
 }
 :root .checked-1pZh2h {
   background: transparent;
+  background-color: #00FF00;
   border-color: transparent;
 }
 :root .bottomDivider-ZmTm-j {
   border-bottom-color: transparent;
+  background-color: #00FF00;
 }
 :root .notDetected-2HEmAp,
 :root .addGamePopout-2SKNIV {
   background: var(--background-secondary-alt);
+  background-color: #00FF00;
 }
 :root .gameNameInput-3TuPuA:hover,
 :root .gameNameInput-3TuPuA:focus {
   background: var(--background-secondary-alt);
+  background-color: #00FF00;
   border: none;
 }
 :root .game-3x3aDt {
   box-shadow: 0 1px 0 0 var(--background-secondary);
+  background-color: #00FF00;
 }
 :root .game-3x3aDt .removeGame-3Le1LJ {
   top: -3px;
   right: -5px;
   border-radius: 5px;
+  background-color: #00FF00;
 }
 :root .css-17e1tep-control {
   border: none;
+  background-color: #00FF00;
 }
 :root .bannerUpsellContainer-31E9J5 {
   background-color: var(--background-secondary);
+  background-color: #00FF00;
 }
-:root .flexChild-3PzYmX[style="flex: 1 1 50%;"] {
+:root .flexChild-3PzYmX[style="flex: 1 1 50%;"] { /*volume tabs*/
   flex: 1 !important;
 }
 :root .noticeRegion-qjyUVg {
   max-width: unset;
   right: 0;
+  background-color: #00FF00;
 }
 :root .noticeRegion-qjyUVg .container-20TyK0 {
   background: var(--background-tertiary) !important;
+  background-color: #00FF00;
 }
 :root .colorPickerCustom-1swUKF,
 :root .container-2oNtJn {
   background: var(--background-secondary);
   border-radius: 5px;
+  background-color: #00FF00;
 }
 :root .roleRow-230vCm {
   margin: 5px 0;
   background-color: var(--background-secondary);
+  background-color: #00FF00;
 }
 :root .roleRow-230vCm:last-child {
   border-radius: 4px 4px 0 0;
+  background-color: #00FF00;
 }
 :root .roleRow-230vCm::before {
   display: none;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C {
   border: none;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .list-1AJFv_ {
   padding: 0 20px;
@@ -2051,15 +2308,18 @@
   overflow: hidden;
   z-index: 1;
   border-radius: 0;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .list-1AJFv_ .role-2TIOKu {
   border-radius: 5px;
   margin-bottom: 6px;
   padding-left: 20px;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .list-1AJFv_ .role-2TIOKu .roleCircle-3TFUOr {
   width: 0;
   margin: 0;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .list-1AJFv_ .role-2TIOKu .roleCircle-3TFUOr::before {
   position: absolute;
@@ -2073,15 +2333,18 @@
   opacity: 0.2;
   z-index: -1;
   transition: opacity 200ms;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .list-1AJFv_ .role-2TIOKu .roleName-3910zV {
   margin-left: 0;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .item-2GWPIy:hover:not(.disabled-2G98Nl),
 :root .sidebar-3K3Z4C .topPill-3DJJNV .item-2GWPIy:hover:not(.disabled-2G98Nl),
 :root .sidebar-3K3Z4C .selected-1sf9UK.item-2GWPIy,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .selected-1sf9UK.item-2GWPIy {
   background: none;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::after,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::after,
@@ -2097,29 +2360,35 @@
   background: inherit;
   z-index: -1;
   transition: opacity 200ms;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .item-2GWPIy:hover:not(.disabled-2G98Nl),
 :root .sidebar-3K3Z4C .topPill-3DJJNV .item-2GWPIy:hover:not(.disabled-2G98Nl) {
   background: none;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::before,
 :root .sidebar-3K3Z4C .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::after,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::before,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .item-2GWPIy:hover:not(.disabled-2G98Nl) .roleCircle-3TFUOr::after {
   opacity: 0.3;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .selected-1sf9UK.item-2GWPIy,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .selected-1sf9UK.item-2GWPIy {
   background: none;
+  background-color: #00FF00;
 }
 :root .sidebar-3K3Z4C .selected-1sf9UK.item-2GWPIy .roleCircle-3TFUOr::before,
 :root .sidebar-3K3Z4C .selected-1sf9UK.item-2GWPIy .roleCircle-3TFUOr::after,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .selected-1sf9UK.item-2GWPIy .roleCircle-3TFUOr::before,
 :root .sidebar-3K3Z4C .topPill-3DJJNV .selected-1sf9UK.item-2GWPIy .roleCircle-3TFUOr::after {
   opacity: 0.5 !important;
+  background-color: #00FF00;
 }
 :root .contentWidth-3aWel5 {
   max-width: unset;
+  background-color: #00FF00;
 }
 :root .contentWidth-3aWel5 .previewContainer-1xQAsw {
   border: none;
@@ -2793,4 +3062,44 @@
   top: 13px;
   right: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
