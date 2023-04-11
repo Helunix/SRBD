@@ -1,0 +1,49 @@
+/**
+ * @name test
+ * @author Helunix#5324
+ * @version 0.0.1
+ * @description jsp ça test
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+/*@import url('https://discordstyles.github.io/SoftX/SoftX.css');*/
+@import url('https://helunix.github.io/SRBD/base/custom2.css');
+@import url('https://helunix.github.io/SRBD//others/radial-glow.css');
+@import url('https://helunix.github.io/SRBD//others/vertical-user-areacss');
+@import url('https://helunix.github.io/SRBD//others/windows-titlebar.css');
+
+:root {
+  --scrollbar-auto-thumb: #121722;
+  --scrollbar-auto-track: #191F2E;
+  --scrollbar-thin-thumb: #141925;
+  --background-image: url('https://helunix.github.io/SRBD/logo2.3.png'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-blur: 15px; /* Blur intensity of --background-image */
+  --opacity: 0.65; /* Opacity of overall app. | Default: .85 */
+  --accent: 239, 162, 170; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+  --glow-intensity: 0; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+  --font: Inter; /* Custom font | Default: 'Inter' */
+  --channels-width: 230px; /* Width of the channels list. | Default: 300px */
+  --guilds-width: 85px; /* Width of the server list. | Default: 105px */
+  --members-width: 250px; /* Width of the members list. | Default: 280px */
+  --server-size: 48px; /* Size of the servers inside the server list. | Default: 50px */
+  --chat-avatar-size: 38px; /* Size of the chat avatars. | Default: 32px */
+  --rs-small-spacing: 1.5px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 2px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 1.7px; /* Ring width | Default: 1.5px */
+  --rs-medium-width: 2.3px;
+  --rs-large-width: 3px;
+  --rs-avatar-shape: 35%; /* 50% for round - 0% for square */
+  --rs-online-color: #43B581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+}
+
+/* Any custom CSS below here */
+
+
